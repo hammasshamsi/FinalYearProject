@@ -37,7 +37,7 @@
                                 <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/event">Event</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
-                                <li class="nav-item dropdown">
+                                <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="/bloglist" data-toggle="dropdown" role="button">Blog</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="nav-link" href="/bloglist">Blog List</a></li>
@@ -45,8 +45,8 @@
                                         <li class="nav-item"><a class="nav-link" href="/singleblogleftsidebar">Single Blog left Sidebar</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/singleblognosidebar">Single Blog No Sidebar</a></li>
                                     </ul>
-                                </li>
-                                <li class="nav-item dropdown">
+                                </li> -->
+                                <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Pages</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="nav-link dropdown-toggle" href="gallery.html" role="button">Gallery</a>
@@ -62,8 +62,9 @@
                                         <li class="nav-item"><a class="nav-link" href="index-offcanvas.html">Off Canvas Menu</a></li>
                                         <li class="nav-item"><a class="nav-link" href="typography.html">Typography</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link special-link" href="/"><i class="fa fa-send"></i>Get Started</a></li>     
                             </ul>
                         </div>
                     </nav>

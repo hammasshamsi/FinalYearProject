@@ -745,6 +745,11 @@ blockquote:before {
     visibility: visible;
 }
 
+#header-area .header-bottom-area .main-menu .navbar-nav li a.special-link{
+    color:#3b60c9 !important;
+    font-weight: 800;
+}
+
 #header-area
     .header-bottom-area
     .main-menu
