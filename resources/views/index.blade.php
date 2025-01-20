@@ -12,7 +12,7 @@
                         <div class="col-lg-9">
                             <div class="slider-content">
                                 <h2>We Are Proud</h2>
-                                <h3>Students of <span>Oxfornt University</span></h3>
+                                <h3>Students of <span>DHA SUFFA UNIVERSITY</span></h3>
                                 <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the need (academic, relocation, career, projects, mentorship, etc. you can ask the community and get responses in three.</p>
                                 <div class="slider-btn">
                                     <a href="#about-area" class="btn btn-brand smooth-scroll">our mission</a>
@@ -32,7 +32,7 @@
                         <div class="col-lg-9">
                             <div class="slider-content">
                                 <h2>We Are Not Proud</h2>
-                                <h3>Students of <span>Oxfornt University</span></h3>
+                                <h3>Students of <span>DHA SUFFA UNIVERSITY</span></h3>
                                 <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the need (academic, relocation, career, projects, mentorship, etc. you can ask the community and get responses in three.</p>
                                 <div class="slider-btn">
                                     <a href="#" class="btn btn-brand">our mission</a>
@@ -52,7 +52,7 @@
                         <div class="col-lg-9">
                             <div class="slider-content">
                                 <h2>Why Proud for u</h2>
-                                <h3>Students of <span>Oxfornt University</span></h3>
+                                <h3>Students of <span>DHA SUFFA UNIVERSITY</span></h3>
                                 <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the need (academic, relocation, career, projects, mentorship, etc. you can ask the community and get responses in three.</p>
                                 <div class="slider-btn">
                                     <a href="#" class="btn btn-brand">our mission</a>
@@ -94,7 +94,7 @@
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
-                                            <img src="/storage/event_assets/event.jpg" class="img-fluid" alt="Upcoming Event">
+                                            <img src="{{ asset('assets/img/upcoming-events/event-1.jpg') }}" class="img-fluid" alt="Upcoming Event">
                                             <h4 class="up-event-date">It&#x2019;s 1 March 2025</h4>
                                         </div>
                                     </div>
@@ -197,7 +197,7 @@
                             </div>
 
                             <div class="about-thumb">
-                                <img src="http://placehold.it/1440x1018" alt="" class="img-fluid">
+                                <img src="" alt="" class="img-fluid">
                             </div>
 
                             <p>There are many company Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis  csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -336,146 +336,8 @@
     <!--== FunFact Area End ==-->
 
     <!--== Job Opportunity Area Start ==-->
-    <section id="job-opportunity" class="section-padding">
-        <div class="container">
-            <!--== Section Title Start ==-->
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2>Recent Jobs</h2>
-                    </div>
-                </div>
-            </div>
-            <!--== Section Title End ==-->
 
-            <!--== Job opportunity Wrapper ==-->
-            <div class="job-opportunity-wrapper">
-                <div class="row">
-                    <!--== Single Job opportunity Start ==-->
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <div class="single-job-opportunity">
-                            <div class="job-opportunity-text">
-                                <div class="job-oppor-logo">
-                                    <div class="display-table">
-                                        <div class="display-table-cell">
-                                            <img src="http://placehold.it/317x410" alt="Job">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="#">Urgently Need Five Data Center Specialist</a></h3>
-                                <p>Claritas est etiam procsus dymicus, qui sequitur mutationem Claritas est etiam procsus est etiam procsus dymicus.<a href="#">[...]</a></p>
-                            </div>
-                            <a href="#" class="btn btn-job">Apply now</a>
-                        </div>
-                    </div>
-                    <!--== Single Job opportunity End ==-->
-
-                    <!--== Single Job opportunity Start ==-->
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <div class="single-job-opportunity">
-                            <div class="job-opportunity-text">
-                                <div class="job-oppor-logo">
-                                    <div class="display-table">
-                                        <div class="display-table-cell">
-                                            <img src="http://placehold.it/349x248" alt="Job">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="#">Product Owner (m/f) for our Charter Business</a></h3>
-                                <p>Claritas est etiam procsus dymicus, qui sequitur mutationem Claritas est etiam procsus est etiam procsus dymicus.<a href="#">[...]</a></p>
-                            </div>
-                            <a href="#" class="btn btn-job">Apply now</a>
-                        </div>
-                    </div>
-                    <!--== Single Job opportunity End ==-->
-
-                    <!--== Single Job opportunity Start ==-->
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <div class="single-job-opportunity">
-                            <div class="job-opportunity-text">
-                                <div class="job-oppor-logo">
-                                    <div class="display-table">
-                                        <div class="display-table-cell">
-                                            <img src="http://placehold.it/317x410" alt="Job">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="#">Backend Developer (Java) (m/f) wanted for leading</a></h3>
-                                <p>Claritas est etiam procsus dymicus, qui sequitur mutationem Claritas est etiam procsus est etiam procsus dymicus.<a href="#">[...]</a></p>
-                            </div>
-                            <a href="#" class="btn btn-job btn-expired disabled">Expired</a>
-                        </div>
-                    </div>
-                    <!--== Single Job opportunity End ==-->
-
-                    <!--== Single Job opportunity Start ==-->
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <div class="single-job-opportunity">
-                            <div class="job-opportunity-text">
-                                <div class="job-oppor-logo">
-                                    <div class="display-table">
-                                        <div class="display-table-cell">
-                                            <img src="http://placehold.it/349x248" alt="Job">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="#">API Architect and Lead - Python, SQLAlchemy, GraphQL</a></h3>
-                                <p>Claritas est etiam procsus dymicus, qui sequitur mutationem Claritas est etiam procsus est etiam procsus dymicus.<a href="#">[...]</a></p>
-                            </div>
-                            <a href="#" class="btn btn-job">Apply now</a>
-                        </div>
-                    </div>
-                    <!--== Single Job opportunity End ==-->
-
-                    <!--== Single Job opportunity Start ==-->
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <div class="single-job-opportunity">
-                            <div class="job-opportunity-text">
-                                <div class="job-oppor-logo">
-                                    <div class="display-table">
-                                        <div class="display-table-cell">
-                                            <img src="http://placehold.it/314x234" alt="Job">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="#">Remotely - Javascript Developer Node.js</a></h3>
-                                <p>Claritas est etiam procsus dymicus, qui sequitur mutationem Claritas est etiam procsus est etiam procsus dymicus.<a href="#">[...]</a></p>
-                            </div>
-                            <a href="#" class="btn btn-job btn-expired disabled">Expired</a>
-                        </div>
-                    </div>
-                    <!--== Single Job opportunity End ==-->
-
-                    <!--== Single Job opportunity Start ==-->
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <div class="single-job-opportunity">
-                            <div class="job-opportunity-text">
-                                <div class="job-oppor-logo">
-                                    <div class="display-table">
-                                        <div class="display-table-cell">
-                                            <img src="http://placehold.it/226x224" alt="Job">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3><a href="#">Five Years Experience Data Center Specialist Needed</a></h3>
-                                <p>Claritas est etiam procsus dymicus, qui sequitur mutationem Claritas est etiam procsus est etiam procsus dymicus.<a href="#">[...]</a></p>
-                            </div>
-                            <a href="#" class="btn btn-job">Apply now</a>
-                        </div>
-                    </div>
-                    <!--== Single Job opportunity End ==-->
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <a href="career.html" class="btn btn-brand btn-loadmore">All job list</a>
-                    </div>
-                </div>
-            </div>
-            <!--== Job opportunity Wrapper ==-->
-        </div>
-    </section>
-    <!--== Job Opportunity Area End ==-->
+    <!--== Job Opportunity Area End == -->
 
     <!--== Gallery Area Start ==-->
     <section id="gallery-area" class="section-padding">
@@ -514,7 +376,7 @@
                                             <h4>University Faculty Event</h4>
                                             <p class="gallery-event-date">29 Dec, 2024</p>
                                         </div>
-                                        <a href="storage/gallery_assets/image1.jpg" class="btn-zoom image-popup">
+                                        <a href="{{ asset('assets/img/gallery/g1.jpg') }}" class="btn-zoom image-popup">
                                             <img src="assets/img/zoom-icon.png" alt="a">
                                         </a>
                                     </div>
@@ -538,7 +400,7 @@
                                             <h4>Auditorium Session</h4>
                                             <p class="gallery-event-date">21 Oct, 2024</p>
                                         </div>
-                                        <a href="storage/gallery_assets/image5.jpg" class="btn-zoom image-popup">
+                                        <a href="{{ asset('assets/img/gallery/g2.jpg') }}" class="btn-zoom image-popup">
                                             <img src="assets/img/zoom-icon.png" alt="a">
                                         </a>
                                     </div>
@@ -554,7 +416,7 @@
                                             <h4>Member's Training</h4>
                                             <p class="gallery-event-date">19 June, 2024</p>
                                         </div>
-                                        <a href="storage/gallery_assets/image4.jpg" class="btn-zoom image-popup">
+                                        <a href="{{ asset('assets/img/gallery/g3.jpg') }}" class="btn-zoom image-popup">
                                             <img src="assets/img/zoom-icon.png" alt="a">
                                         </a>
                                     </div>
@@ -570,7 +432,7 @@
                                             <h4>Cabinet Meeting</h4>
                                             <p class="gallery-event-date">28 Sep, 2024</p>
                                         </div>
-                                        <a href="storage/gallery_assets/image2.jpg" class="btn-zoom image-popup">
+                                        <a href="{{ asset('assets/img/gallery/g4.jpg') }}" class="btn-zoom image-popup">
                                             <img src="assets/img/zoom-icon.png" alt="a">
                                         </a>
                                     </div>
@@ -583,10 +445,10 @@
                                 <div class="single-gallery-item gallery-bg-6">
                                     <div class="gallery-hvr-wrap">
                                         <div class="gallery-hvr-text">
-                                            <h4>Annual Dinner</h4>
+                                            <h4>World's Job fair</h4>
                                             <p class="gallery-event-date">30 Dec, 2024</p>
                                         </div>
-                                        <a href="storage/gallery_assets/image3.jpg" class="btn-zoom image-popup">
+                                        <a href="{{ asset('assets/img/gallery/g5.jpg') }}" class="btn-zoom image-popup">
                                             <img src="assets/img/zoom-icon.png" alt="a">
                                         </a>
                                     </div>
@@ -610,7 +472,7 @@
                                             <h4>Managing Director Workshop</h4>
                                             <p class="gallery-event-date">2 Aug, 2024</p>
                                         </div>
-                                        <a href="storage/gallery_assets/image6.jpg" class="btn-zoom image-popup">
+                                        <a href="{{ asset('assets/img/gallery/g6.jpg') }}" class="btn-zoom image-popup">
                                             <img src="assets/img/zoom-icon.png" alt="a">
                                         </a>
                                     </div>
@@ -626,6 +488,76 @@
         </div>
     </section>
     <!--== Gallery Area Start ==-->
+
+
+    <!--== Blog Area Start ==-->
+    <section id="how-it-works" class="section-padding">
+    <div class="container">
+        <!--== Section Title Start ==-->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-title">
+                    <h2>How It Works</h2>
+                    <p>Follow these steps to get started</p>
+                </div>
+            </div>
+        </div>
+        <!--== Section Title End ==-->
+
+        <!--== Stepper Content Wrapper ==-->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="stepper">
+                    <!-- Step 1 -->
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Step 1: Sign Up</h3>
+                            <p>To begin, create your account by providing basic information.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fa fa-clipboard"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Step 2: Fill Out Form</h3>
+                            <p>Once signed in, Fill your data to get started.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Step 3: Submit</h3>
+                            <p>Fill out form and submit correct data.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fa fa-lightbulb-o"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Step 4: Get Results</h3>
+                            <p>Get Recommendation OR Prediction from Trained Model.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--== Stepper Content Wrapper End ==-->
+    </div>
+</section>
+<!--== Stepper Section End ==-->
 
     <!--== Scholership Promo Area Start ==-->
     <section id="scholership-promo">
@@ -643,125 +575,8 @@
     </section>
     <!--== Scholership Promo Area End ==-->
 
-    <!--== Blog Area Start ==-->
-    <section id="blog-area" class="section-padding">
-        <div class="container">
-            <!--== Section Title Start ==-->
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <h2>Recent News</h2>
-                    </div>
-                </div>
-            </div>
-            <!--== Section Title End ==-->
+    
 
-            <!--== Blog Content Wrapper ==-->
-            <div class="row">
-                <!--== Single Blog Post start ==-->
-                <div class="col-lg-4 col-md-6">
-                    <article class="single-blog-post">
-                        <figure class="blog-thumb">
-                            <div class="blog-thumbnail">
-                                <img src="http://placehold.it/700x353" alt="Blog" class="img-fluid">
-                            </div>
-                            <figcaption class="blog-meta clearfix">
-                                <a href="single-blog.html" class="author">
-                                    <div class="author-pic">
-                                        <img src="http://placehold.it/200x200" alt="Author">
-                                    </div>
-                                    <div class="author-info">
-                                        <h5>Daney williams</h5>
-                                        <p>2 hours Ago</p>
-                                    </div>
-                                </a>
-                                <div class="like-comm pull-right">
-                                    <a href="#"><i class="fa fa-comment-o"></i>77</a>
-                                    <a href="#"><i class="fa fa-heart-o"></i>12</a>
-                                </div>
-                            </figcaption>
-                        </figure>
 
-                        <div class="blog-content">
-                            <h3><a href="single-blog.html">Recently we create a maassive project that</a></h3>
-                            <p>This is a big project of our company, we are happy to completed this type projec which are
-                                get world famous award</p>
-                            <a href="single-blog.html" class="btn btn-brand">More</a>
-                        </div>
-                    </article>
-                </div>
-                <!--== Single Blog Post End ==-->
 
-                <!--== Single Blog Post start ==-->
-                <div class="col-lg-4 col-md-6">
-                    <article class="single-blog-post">
-                        <figure class="blog-thumb">
-                            <div class="blog-thumbnail">
-                                <img src="http://placehold.it/700x352" alt="Blog" class="img-fluid">
-                            </div>
-                            <figcaption class="blog-meta clearfix">
-                                <a href="single-blog.html" class="author">
-                                    <div class="author-pic">
-                                        <img src="http://placehold.it/200x200" alt="Author">
-                                    </div>
-                                    <div class="author-info">
-                                        <h5>Myra Hindley</h5>
-                                        <p>1 Day Ago</p>
-                                    </div>
-                                </a>
-                                <div class="like-comm pull-right">
-                                    <a href="#"><i class="fa fa-comment-o"></i>77</a>
-                                    <a href="#"><i class="fa fa-heart-o"></i>12</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-
-                        <div class="blog-content">
-                            <h3><a href="single-blog.html">Myra Hindley and her lover, Ian Brady, plotted and</a></h3>
-                            <p>This is a big project of our company, we are happy to completed this type projec which are
-                                get world famous award</p>
-                            <a href="single-blog.html" class="btn btn-brand">More</a>
-                        </div>
-                    </article>
-                </div>
-                <!--== Single Blog Post End ==-->
-
-                <!--== Single Blog Post start ==-->
-                <div class="col-lg-4 col-md-6">
-                    <article class="single-blog-post">
-                        <figure class="blog-thumb">
-                            <div class="blog-thumbnail">
-                                <img src="http://placehold.it/700x352" alt="Blog" class="img-fluid">
-                            </div>
-                            <figcaption class="blog-meta clearfix">
-                                <a href="single-blog.html" class="author">
-                                    <div class="author-pic">
-                                        <img src="http://placehold.it/200x200" alt="Author">
-                                    </div>
-                                    <div class="author-info">
-                                        <h5>Aileen Wuornos</h5>
-                                        <p>3 mins Ago</p>
-                                    </div>
-                                </a>
-                                <div class="like-comm pull-right">
-                                    <a href="#"><i class="fa fa-comment-o"></i>77</a>
-                                    <a href="#"><i class="fa fa-heart-o"></i>12</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-
-                        <div class="blog-content">
-                            <h3><a href="single-blog.html">Nurse with a private practice, racked up dozens of victims</a></h3>
-                            <p>This is a big project of our company, we are happy to completed this type projec which are
-                                get world famous award</p>
-                            <a href="single-blog.html" class="btn btn-brand">More</a>
-                        </div>
-                    </article>
-                </div>
-                <!--== Single Blog Post End ==-->
-            </div>
-            <!--== Blog Content Wrapper ==-->
-        </div>
-    </section>
-    <!--== Blog Area EndBlog ==-->
 @endsection()

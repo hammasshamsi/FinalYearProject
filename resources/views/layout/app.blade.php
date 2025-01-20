@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>uniAlumni</title>
+    <title>Global visa prediction</title>
 
     <meta name="description" content="simple description for your site">
     <meta name="keywords" content="keyword1, keyword2">
@@ -92,8 +92,7 @@
 
     <!-- Main Master Style  CSS  -->
     <link id="cbx-style" data-layout="1" rel="stylesheet" href="{{ asset('assets/css/style-default.min.css') }}" media="all">
-
-
+@stack('styles')
 </head>
 <body>
 
@@ -173,7 +172,7 @@
 
 <!-- custom js: custom scripts for theme style switcher for demo purpose  -->
 
-
+@stack('scripts')
 
 </body>
 </html>
