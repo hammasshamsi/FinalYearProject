@@ -27,51 +27,8 @@
                     <div class="col-lg-11 m-auto">
                         <!-- Single about text start -->
                         <div class="single-about-text">
-                            <span class="year">1834</span>
-                            <img src="http://placehold.it/1920x1281" alt="About" class="img-fluid img-left">
+                            <span class="year">About Us</span>
                             <h2 class="h3">ESTD of This Alumni Assotitation</h2>
-                            <p>Aenean viverra rhoncus sspede. Phasellssus leo dolor, tempus non, auctor endrerit
-                                quis, nisi. Fusce neque. Donec vitae orci sed dolor rutrum ausssctor. Sed
-                                fringilla mauris sit amet nibh.</p>
-                            <p>Etiam rhoncus. Ut lddffdfqwqeo. Morbi mollis tellus ac sapien. Fusce fermentum oo
-                                nec arcu. Quisque manisl idUt leo. Morbi mollis tellus ac sapien. Fusce
-                                fermentum oo nec ante tempus hendrerit. Curabitur at lacus ac velit ornare
-                                lobortis. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                                turpis. Quisque id mi.Aenean viverra rhoncus pede. Phasellus leo dolor, tempus non, auctor endrerit quis, nisi.
-                                Fusce neque. Donec vitae orci sed dolor rutrum auctor. Sed fringilla mauris sit amet
-                                nibh.Etiam rhoncus. Ut leo. Morbi mollis tellus ac sapien. Fusce fermentum oo nec arcu.
-                                Quisque malesuada placerat nisl. Etiam sit amet orci eget faucitincidunt. Quisque
-                                rutrum. Pellentesque posuere. Praesent ac massa at ligula laoureet iaculis. Cras risus
-                                ipsum, faucibus ut, ullamcorper id, varius ac, leo.</p>
-                        </div>
-                        <!-- Single about text End -->
-
-                        <!-- Single about text start -->
-                        <div class="single-about-text">
-                            <span class="year">1920</span>
-                            <img src="http://placehold.it/1920x1280" alt="About" class="img-fluid img-right">
-                            <h2 class="h3">Our First Achivement in History</h2>
-                            <p>Aenean viverra rhoncus sspede. Phasellssus leo dolor, tempus non, auctor endrerit
-                                quis, nisi. Fusce neque. Donec vitae orci sed dolor rutrum ausssctor. Sed
-                                fringilla mauris sit amet nibh.</p>
-                            <p>Etiam rhoncus. Ut lddffdfqwqeo. Morbi mollis tellus ac sapien. Fusce fermentum oo
-                                nec arcu. Quisque manisl idUt leo. Morbi mollis tellus ac sapien. Fusce
-                                fermentum oo nec ante tempus hendrerit. Curabitur at lacus ac velit ornare
-                                lobortis. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                                turpis. Quisque id mi.Aenean viverra rhoncus pede. Phasellus leo dolor, tempus non, auctor endrerit quis, nisi.
-                                Fusce neque. Donec vitae orci sed dolor rutrum auctor. Sed fringilla mauris sit amet
-                                nibh.Etiam rhoncus. Ut leo. Morbi mollis tellus ac sapien. Fusce fermentum oo nec arcu.
-                                Quisque malesuada placerat nisl. Etiam sit amet orci eget faucitincidunt. Quisque
-                                rutrum. Pellentesque posuere. Praesent ac massa at ligula laoureet iaculis. Cras risus
-                                ipsum, faucibus ut, ullamcorper id, varius ac, leo.</p>
-                        </div>
-                        <!-- Single about text End -->
-
-                        <!-- Single about text start -->
-                        <div class="single-about-text">
-                            <span class="year">2006</span>
-                            <img src="http://placehold.it/1920x1280" alt="About" class="img-fluid img-left">
-                            <h2 class="h3">Our New Genaretion</h2>
                             <p>Aenean viverra rhoncus sspede. Phasellssus leo dolor, tempus non, auctor endrerit
                                 quis, nisi. Fusce neque. Donec vitae orci sed dolor rutrum ausssctor. Sed
                                 fringilla mauris sit amet nibh.</p>
@@ -103,7 +60,7 @@
                                 <img src="assets/img/fun-fact/user.svg" alt="Funfact">
                             </div>
                             <div class="funfact-info">
-                                <h5 class="funfact-count">4025</h5>
+                                <h5 class="funfact-count">25</h5>
                                 <p>Members</p>
                             </div>
                         </div>
@@ -117,7 +74,7 @@
                                 <img src="assets/img/fun-fact/picture.svg" alt="Funfact">
                             </div>
                             <div class="funfact-info">
-                                <h5 class="funfact-count">8725</h5>
+                                <h5 class="funfact-count">725</h5>
                                 <p>Photos</p>
                             </div>
                         </div>
@@ -131,7 +88,7 @@
                                 <img src="assets/img/fun-fact/event.svg" alt="Funfact">
                             </div>
                             <div class="funfact-info">
-                                <h5><span class="funfact-count">231</span>+</h5>
+                                <h5><span class="funfact-count">100</span>+</h5>
                                 <p>Events</p>
                             </div>
                         </div>
@@ -145,7 +102,7 @@
                                 <img src="assets/img/fun-fact/medal.svg" alt="Funfact">
                             </div>
                             <div class="funfact-info">
-                                <h5><span class="funfact-count">32</span>+</h5>
+                                <h5><span class="funfact-count">12</span>+</h5>
                                 <p>Awards</p>
                             </div>
                         </div>
@@ -168,77 +125,61 @@
 
                 <div class="honorable-committee-list">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="single-committee-member">
                                 <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" class="img-fluid" alt="Committee">
                                 </div>
-                                <h3>BRYAN WATSHON<span class="committee-deg">President</span></h3>
+                                <h3>Ayoub Kamal<span class="committee-deg">Project Supervisor</span></h3>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="single-committee-member">
                                 <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" class="img-fluid" alt="Committee">
                                 </div>
-                                <h3>CARLOS HELU<span class="committee-deg">Vice President</span></h3>
+                                <h3>Dr. Ahmad Bilal<span class="committee-deg">Co-Supervisor</span></h3>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="single-committee-member">
                                 <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" class="img-fluid" alt="Committee">
                                 </div>
-                                <h3>ANGLE TUNI<span class="committee-deg">Secretary</span></h3>
+                                <h3>Conrad d'Silva<span class="committee-deg">Co-Supervisor</span></h3>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="single-committee-member">
                                 <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" class="img-fluid" alt="Committee">
                                 </div>
-                                <h3>ALEX KALIFA<span class="committee-deg">Asst Secretary</span></h3>
+                                <h3>Ahmad Yazdani<span class="committee-deg">Team Lead</span></h3>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="single-committee-member">
                                 <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" class="img-fluid" alt="Committee">
                                 </div>
-                                <h3>ALEX Tuntuni<span class="committee-deg">Office Secretary</span></h3>
+                                <h3>Hammas Shamsi<span class="committee-deg">Team Member</span></h3>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="single-committee-member">
                                 <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" class="img-fluid" alt="Committee">
                                 </div>
-                                <h3>MAL MUHIT<span class="committee-deg">Finance Member</span></h3>
+                                <h3>Saif Ali Khan<span class="committee-deg">Team Member</span></h3>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="single-committee-member">
-                                <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
-                                </div>
-                                <h3>PRINCE RIMON<span class="committee-deg">Committee Member</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="single-committee-member">
-                                <div class="commitee-thumb">
-                                    <img src="http://placehold.it/500x700" class="img-fluid" alt="Committee">
-                                </div>
-                                <h3>PRINCE KAMLA<span class="committee-deg">Committee Member</span></h3>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -260,7 +201,7 @@
                             <!-- Single People Testimonial -->
                             <div class="single-testimonial-wrap">
                                 <div class="people-thumb">
-                                    <img src="http://placehold.it/500x500" alt="Alumni" class="img-fluid">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" alt="Alumni" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
                                 <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
@@ -273,7 +214,7 @@
                             <!-- Single People Testimonial -->
                             <div class="single-testimonial-wrap">
                                 <div class="people-thumb">
-                                    <img src="http://placehold.it/500x500" alt="" class="img-fluid">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
                                 <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
@@ -286,7 +227,7 @@
                             <!-- Single People Testimonial -->
                             <div class="single-testimonial-wrap">
                                 <div class="people-thumb">
-                                    <img src="http://placehold.it/500x500" alt="" class="img-fluid">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
                                 <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
