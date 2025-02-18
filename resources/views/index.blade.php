@@ -124,8 +124,8 @@
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
-                                            <img src="http://placehold.it/700x390" class="img-fluid" alt="Upcoming Event">
-                                            <h4 class="up-event-date">It&#x2019;s 27 February 2019</h4>
+                                            <img src="{{ asset('assets/img/upcoming-events/event-3.jpg') }}" class="img-fluid" alt="Upcoming Event">
+                                            <h4 class="up-event-date">It&#x2019;s 18 March 2025</h4>
                                         </div>
                                     </div>
 
@@ -134,7 +134,7 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2018/9/10"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/3/18"></div>
                                                         <p>Remaining</p>
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
@@ -154,8 +154,8 @@
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
-                                            <img src="http://placehold.it/700x390" class="img-fluid" alt="Upcoming Event">
-                                            <h4 class="up-event-date">It&#x2019;s 27 February 2019</h4>
+                                            <img src="{{ asset('assets/img/upcoming-events/event-2.jpg') }}" class="img-fluid" alt="Upcoming Event">
+                                            <h4 class="up-event-date">It&#x2019;s 27 April 2025</h4>
                                         </div>
                                     </div>
 
@@ -164,7 +164,7 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2018/9/10"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/4/27"></div>
                                                         <p>Remaining</p>
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
@@ -565,8 +565,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="scholership-promo-text">
-                        <h2>Universities Provide <span>Scholarship</span> For Talented Student!</h2>
-                        <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the need academic, relocation, career, projects, mentorship, etc you can ask the community and get </p>
+                        <h2>Join Our Global University <span>Representative</span> Program!</h2>
+                        <p>We are building a network of university representatives to guide students on visas, careers, and relocation. Be a part of our community and make a difference!</p>
                         <a href="#" class="btn btn-brand">Apply Now</a>
                     </div>
                 </div>

@@ -2092,6 +2092,27 @@ blockquote:before {
     z-index: 1;
 }
 
+.page-title-area-about{
+    background-image: url("../img/about-page/aboutUsBanner.jpg") !important;
+}
+
+.page-title-area-register{
+    background-image: url("../img/page-banners/login-banner.jpg") !important;
+}
+
+.page-title-area-event{
+    background-image: url("../img/page-banners/event-banner.jpg") !important;
+}
+.page-title-area-gallery{
+    background-image: url("../img/page-banners/gallery-banner.jpg") !important;
+}
+.page-title-area-fillform{
+    background-image: url("../img/page-banners/fillform-banner.jpg") !important;
+}
+.page-title-area-contact{
+    background-image: url("../img/page-banners/contactus-banner.jpg") !important;
+}
+
 #page-title-area:after {
     background-color: #000;
     content: "";
@@ -2103,10 +2124,20 @@ blockquote:before {
     -moz-opacity: 0.8;
     -khtml-opacity: 0.8;
     -webkit-opacity: 0.8;
-    opacity: 0.8;
+    opacity: 0.6;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
     filter: alpha(opacity=80);
     z-index: -1;
+}
+
+
+.agree-checkboxes span{
+    margin-left:5px;
+}
+
+.agree-checkboxes a{
+    font-weight:500;
+    text-decoration: underline;
 }
 
 #page-title-area .page-title-content {
@@ -3232,6 +3263,11 @@ blockquote:before {
     line-height: 1;
     color: #131c33;
     margin-bottom: 30px;
+}
+.signin-area-wrap label a{
+    font-size:14px;
+    font-weight:300;
+    text-decoration: underline;
 }
 
 .register-form-content .signin-area-wrap .sign-form input {

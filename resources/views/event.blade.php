@@ -3,7 +3,7 @@
 @section('content')
 
     <!--== Page Title Area Start ==-->
-    <section id="page-title-area">
+    <section id="page-title-area" class="page-title-area-event">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto text-center">
@@ -23,32 +23,31 @@
     <section id="page-content-wrap">
         <div class="event-page-content-wrap section-padding">
             <div class="container">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-12">
                         <div class="event-filter-area">
                             <form action="index.html" class="form-inline">
                                 <select name="year" id="year">
                                     <option selected>Year</option>
-                                    <option>2018</option>
-                                    <option>2017</option>
-                                    <option>2016</option>
-                                    <option>2015</option>
-                                    <option>2014</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
                                 </select>
 
                                 <select name="place" id="place">
                                     <option selected>Place</option>
-                                    <option>Alabama</option>
-                                    <option>Alaska</option>
-                                    <option>Arizona</option>
-                                    <option>Colorado</option>
-                                    <option>Delaware</option>
+                                    <option>Karachi</option>
+                                    <option>Islamabad</option>
+                                    <option>Online</option>
+                                    <option>Rawalpindi</option>
+                                    <option>Lahore</option>
                                 </select>
 
                                 <select name="type" id="type">
                                     <option selected>Type</option>
                                     <option>Meetup</option>
-                                    <option>Seminar</option>
+                                    <option>Picnic</option>
                                     <option>Get Together</option>
                                 </select>
 
@@ -56,7 +55,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row">
                     <div class="col-lg-12">
@@ -66,8 +65,8 @@
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
-                                            <img src="http://placehold.it/700x390" class="img-fluid" alt="Upcoming Event">
-                                            <h4 class="up-event-date">It&#x2019;s 27 February 2019</h4>
+                                            <img src="{{ asset('assets/img/upcoming-events/event-1.jpg') }}" class="img-fluid" alt="Upcoming Event">
+                                            <h4 class="up-event-date">It&#x2019;s 01 March 2025</h4>
                                         </div>
                                     </div>
 
@@ -76,7 +75,7 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2018/9/10"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/3/01"></div>
                                                         <p>Remaining</p>
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
@@ -95,8 +94,8 @@
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
-                                            <img src="http://placehold.it/700x390" class="img-fluid" alt="Upcoming Event">
-                                            <h4 class="up-event-date">It&#x2019;s 27 February 2019</h4>
+                                            <img src="{{ asset('assets/img/upcoming-events/event-2.jpg') }}" class="img-fluid" alt="Upcoming Event">
+                                            <h4 class="up-event-date">It&#x2019;s 27 April 2025</h4>
                                         </div>
                                     </div>
 
@@ -105,10 +104,10 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2018/9/10"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/4/27"></div>
                                                         <p>Remaining</p>
                                                     </div>
-                                                    <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
+                                                    <h3><a href="single-event.html">We are going to arrange a Team Dinner!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
                                                     <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
                                                 </div>
@@ -124,8 +123,8 @@
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
-                                            <img src="http://placehold.it/700x390" class="img-fluid" alt="Upcoming Event">
-                                            <h4 class="up-event-date">It&#x2019;s 27 February 2019</h4>
+                                            <img src="{{ asset('assets/img/upcoming-events/event-3.jpg') }}" class="img-fluid" alt="Upcoming Event">
+                                            <h4 class="up-event-date">It&#x2019;s 18 March 2025</h4>
                                         </div>
                                     </div>
 
@@ -134,10 +133,10 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2018/9/10"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/3/18"></div>
                                                         <p>Remaining</p>
                                                     </div>
-                                                    <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
+                                                    <h3><a href="single-event.html">We are going to arrange a Mountain Camping!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
                                                     <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
                                                 </div>
@@ -153,8 +152,8 @@
                                 <div class="row">
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
-                                            <img src="http://placehold.it/700x390" class="img-fluid" alt="Upcoming Event">
-                                            <h4 class="up-event-date">It&#x2019;s 27 February 2019</h4>
+                                            <img src="{{ asset('assets/img/upcoming-events/event-4.jpg') }}" class="img-fluid" alt="Upcoming Event">
+                                            <h4 class="up-event-date">It&#x2019;s 02 May 2025</h4>
                                         </div>
                                     </div>
 
@@ -163,10 +162,10 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2018/9/10"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/5/02"></div>
                                                         <p>Remaining</p>
                                                     </div>
-                                                    <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
+                                                    <h3><a href="single-event.html">We are going to arrange a Meetup with our CEO!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
                                                     <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
                                                 </div>
@@ -192,7 +191,7 @@
                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">50</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
                                     <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
                                 </ul>
                             </nav>

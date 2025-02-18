@@ -3,7 +3,7 @@
 @section('content')
 
 <!--== Page Title Area Start ==-->
-<section id="page-title-area">
+<section id="page-title-area" class="page-title-area-fillform">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto text-center">
@@ -160,9 +160,12 @@
                     </div>
 
                     <!-- Step 4 -->
-                    <div class="step-content">
-                        <h3 class="mb-4 text-lg font-medium text-gray-900">Agree and Submit Information</h3>
-                        <p><a href="#">Terms and Condition</a></p>
+                    <div class="step-content agree-checkboxes">
+                        <h3 class="mb-4 text-lg font-medium text-gray-900">Agree and Submit Information*</h3>
+                        <p><input type="checkbox"><span></span> I have read and agree to the <a href="#">Terms and Condition</a></p>
+                        <p><input type="checkbox"><span></span> I agree to the collection, storage, and processing of my personal data as described in the <a href="#">Privacy Policy</a></p>
+                        <p><input type="checkbox"><span></span> I consent to my data being shared with trusted third-party partners if needed</p>
+                        <p><input type="checkbox"><span></span> I consent to my data being used for visa prediction analysis and recommendations.</p>
                         <div class="text-right">
                             <button type="button" class="btn btn-secondary prev-step">Previous</button>
                             <button type="submit" class="btn btn-success">Agree and Submit</button>

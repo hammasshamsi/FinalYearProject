@@ -3,7 +3,7 @@
 @section('content')
 
 <!--== Page Title Area Start ==-->
-<section id="page-title-area">
+<section id="page-title-area" class="page-title-area-contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto text-center">

@@ -3,7 +3,7 @@
 @section('content')
 
     <!--== Page Title Area Start ==-->
-    <section id="page-title-area">
+    <section id="page-title-area" class="page-title-area-gallery">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto text-center">
@@ -22,12 +22,12 @@
     <section id="page-content-wrap">
         <div class="gallery-page-wrap section-padding">
             <!-- Gallery Menu Start -->
-            <div class="gallery-menu text-center">
+            <!-- <div class="gallery-menu text-center">
                 <a href="#" class="active">All</a>
                 <a href="#">Seminar</a>
                 <a href="#">Event</a>
                 <a href="#">Picnic</a>
-            </div>
+            </div> -->
             <!-- Gallery Menu End -->
 
             <!--= Gallery Page Content Wrap Start =-->
@@ -424,7 +424,7 @@
                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">50</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
                                     <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
                                 </ul>
                             </nav>

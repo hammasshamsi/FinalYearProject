@@ -3,13 +3,13 @@
 @section('content')
 
     <!--== Page Title Area Start ==-->
-    <section id="page-title-area">
+    <section id="page-title-area" class="page-title-area-register">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto text-center">
                     <div class="page-title-content">
-                        <h1 class="h2">Membership Form</h1>
-                        <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the need</p>
+                        <h1 class="h2">Registration or Login</h1>
+                        <p>This will enable you to submit your data and get the predications in just a few clicks.</p>
                         <a href="#page-content-wrap" class="btn btn-brand smooth-scroll">Let&apos;s See</a>
                     </div>
                 </div>
@@ -36,8 +36,9 @@
                                                         <h4>Already a Member?</h4>
                                                         <div class="sign-form">
                                                             <form action="index.html">
-                                                                <input type="text" placeholder="Enter your ID">
+                                                                <input type="text" placeholder="Enter your Email">
                                                                 <input type="password" placeholder="Password">
+                                                                <label><a href="#">Forgot Password?</a></label>
                                                                 <button type="submit" class="btn btn-reg">Login</button>
                                                             </form>
                                                         </div>
@@ -78,29 +79,10 @@
 
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label for="register_stuid">Student Id</label>
-                                                                    <input type="text" class="form-control" id="register_stuid" name="register_stuid">
+                                                                    <label for="register_dob">Date of birth</label>
+                                                                    <input type="date" class="form-control" id="register_dob" name="register_dob">
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-12 col-sm-6">
-                                                                <div class="form-group">
-                                                                    <label for="register_year">Passing Year</label>
-                                                                    <input type="text" class="form-control" id="register_year" name="register_year">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-12 col-sm-6">
-                                                                <div class="form-group">
-                                                                    <label for="register_deptno">Depertment No</label>
-                                                                    <input type="text" class="form-control" id="register_deptno" name="register_deptno">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group file-input">
-                                                            <input type="file" name="register_file" id="customfile" class="d-none">
-                                                            <label class="custom-file" for="customfile"><i class="fa fa-upload"></i>Upload Your Photo</label>
                                                         </div>
 
                                                         <div class="gender form-group">
@@ -118,9 +100,9 @@
                                                         <div class="form-group">
                                                             <div class="custom-control custom-checkbox float-lg-right">
                                                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                                <label class="custom-control-label" for="customCheck1"> I have read and agree to the <a href="#">Alumni</a> Terms of Service</label>
+                                                                <label class="custom-control-label" for="customCheck1"> I have read and agree to the <a href="#">GVOP</a> Terms of Service</label>
                                                             </div>
-                                                            <input type="submit" class="btn btn-reg" value="Registration">
+                                                            <input type="submit" class="btn btn-reg" value="Register">
                                                         </div>
                                                     </form>
                                                 </div>

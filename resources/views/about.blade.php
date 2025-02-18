@@ -3,7 +3,7 @@
 @section('content')
 
     <!--== Page Title Area Start ==-->
-    <section id="page-title-area">
+    <section id="page-title-area" class="page-title-area-about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 m-auto text-center">
@@ -28,20 +28,15 @@
                         <!-- Single about text start -->
                         <div class="single-about-text">
                             <span class="year">About Us</span>
-                            <h2 class="h3">ESTD of This Alumni Assotitation</h2>
-                            <p>Aenean viverra rhoncus sspede. Phasellssus leo dolor, tempus non, auctor endrerit
-                                quis, nisi. Fusce neque. Donec vitae orci sed dolor rutrum ausssctor. Sed
-                                fringilla mauris sit amet nibh.</p>
-                            <p>Etiam rhoncus. Ut lddffdfqwqeo. Morbi mollis tellus ac sapien. Fusce fermentum oo
-                                nec arcu. Quisque manisl idUt leo. Morbi mollis tellus ac sapien. Fusce
-                                fermentum oo nec ante tempus hendrerit. Curabitur at lacus ac velit ornare
-                                lobortis. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                                turpis. Quisque id mi.Aenean viverra rhoncus pede. Phasellus leo dolor, tempus non, auctor endrerit quis, nisi.
-                                Fusce neque. Donec vitae orci sed dolor rutrum auctor. Sed fringilla mauris sit amet
-                                nibh.Etiam rhoncus. Ut leo. Morbi mollis tellus ac sapien. Fusce fermentum oo nec arcu.
-                                Quisque malesuada placerat nisl. Etiam sit amet orci eget faucitincidunt. Quisque
-                                rutrum. Pellentesque posuere. Praesent ac massa at ligula laoureet iaculis. Cras risus
-                                ipsum, faucibus ut, ullamcorper id, varius ac, leo.</p>
+                            <h2 class="h3">Global Visa Prediction System and Insights</h2>
+                            <p>At <b>GVOP,</b> we simplify the visa application process by providing AI-powered insights and predictions. 
+                                Our platform analyzes your personal, educational, and travel preferences to estimate your visa approval chances and recommend suitable countries if needed.
+                            </p>
+                            <p>We understand how complex and uncertain visa applications can be, 
+                                and our goal is to empower you with data-driven insights to make informed decisions. 
+                                With accuracy, transparency, and user privacy as our top priorities, 
+                                we ensure that your information is handled securely while delivering valuable recommendations.</p>
+                                <p>Join thousands of users who trust <b>GVOP</b> to navigate their visa journey with confidence!</p>
                         </div>
                         <!-- Single about text End -->
                     </div>
@@ -178,8 +173,6 @@
                                 <h3>Saif Ali Khan<span class="committee-deg">Team Member</span></h3>
                             </div>
                         </div>
-
-                        
                     </div>
                 </div>
             </div>
