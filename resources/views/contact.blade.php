@@ -35,7 +35,7 @@
                                          <div id="map_canvas" class="cbx-map map_canvas" data-lat="44.5403" data-lng="-78.5463" data-title="" data-content="<strong>6H Dilara Tower</strong><br /> <br />77 Bir Uttam C.R. Dutta Road <br /> Dhaka 1205 "></div>
                                      </div>
                                       cbx-gmap end -->
-                                    <iframe src="https://snazzymaps.com/embed/75079"></iframe>
+                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.4390056242673!2d67.07733697401005!3d24.814656247091378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c62f239e641%3A0x4e41a2d7dd487cfc!2sDHA%20Suffa%20University!5e0!3m2!1sen!2s!4v1739971357037!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                                 <!-- Map Area End -->
                             </div>

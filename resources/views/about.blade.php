@@ -27,7 +27,7 @@
                     <div class="col-lg-11 m-auto">
                         <!-- Single about text start -->
                         <div class="single-about-text">
-                            <span class="year">About Us</span>
+                            <span class="year shade">About Us</span>
                             <h2 class="h3">Global Visa Prediction System and Insights</h2>
                             <p>At <b>GVOP,</b> we simplify the visa application process by providing AI-powered insights and predictions. 
                                 Our platform analyzes your personal, educational, and travel preferences to estimate your visa approval chances and recommend suitable countries if needed.
@@ -56,7 +56,7 @@
                             </div>
                             <div class="funfact-info">
                                 <h5 class="funfact-count">25</h5>
-                                <p>Members</p>
+                                <p>Team Members</p>
                             </div>
                         </div>
                     </div>
@@ -66,11 +66,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-funfact-wrap">
                             <div class="funfact-icon">
-                                <img src="assets/img/fun-fact/picture.svg" alt="Funfact">
+                                <img src="assets/img/fun-fact/active_members.svg" alt="Funfact">
                             </div>
                             <div class="funfact-info">
                                 <h5 class="funfact-count">725</h5>
-                                <p>Photos</p>
+                                <p>Active Users</p>
                             </div>
                         </div>
                     </div>
@@ -94,11 +94,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-funfact-wrap">
                             <div class="funfact-icon">
-                                <img src="assets/img/fun-fact/medal.svg" alt="Funfact">
+                                <img src="assets/img/fun-fact/predictions.svg" alt="Funfact">
                             </div>
                             <div class="funfact-info">
-                                <h5><span class="funfact-count">12</span>+</h5>
-                                <p>Awards</p>
+                                <h5><span class="funfact-count">120,000</span>+</h5>
+                                <p>Predictions</p>
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                                 <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
                                     inciidunt ut
                                     labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>Robert Albert <span class="people-deg">Founder at Boxr</span></h4>
+                                <h4>XYZ <span class="people-deg">Founder at Something</span></h4>
                             </div>
                             <!-- Single People Testimonial -->
 
@@ -213,7 +213,7 @@
                                 <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
                                     inciidunt ut
                                     labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>Akamla Albert <span class="people-deg">Founder at Kamlakana</span></h4>
+                                <h4>Lorem Ipsum <span class="people-deg">Founder at Anything</span></h4>
                             </div>
                             <!-- Single People Testimonial -->
 
@@ -226,20 +226,20 @@
                                 <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
                                     inciidunt ut
                                     labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>Taklo Nahid <span class="people-deg">Minister at Nara</span></h4>
+                                <h4>Lorem Ipsum <span class="people-deg">Minister at Education</span></h4>
                             </div>
                             <!-- Single People Testimonial -->
 
                             <!-- Single People Testimonial -->
                             <div class="single-testimonial-wrap">
                                 <div class="people-thumb">
-                                    <img src="http://placehold.it/500x500" alt="" class="img-fluid">
+                                    <img src="{{ asset('assets/img/team-member/image.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
                                 <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
                                     inciidunt ut
                                     labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>Mal Muhit<span class="people-deg">Founder at Kamlagiri</span></h4>
+                                <h4>Someone<span class="people-deg">Chancellor of University </span></h4>
                             </div>
                             <!-- Single People Testimonial -->
                         </div>

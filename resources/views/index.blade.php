@@ -231,7 +231,7 @@
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/01.png" alt="Responsibility">
                         <h4>Scholarship</h4>
-                        <p>De create building thinking about your requirment and latest treand on our marketplace area</p>
+                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -241,7 +241,7 @@
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/02.png" alt="Responsibility">
                         <h4>Help Current Students</h4>
-                        <p>De create building thinking about your requirment and latest treand on our marketplace area</p>
+                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -250,8 +250,8 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/03.png" alt="Responsibility">
-                        <h4>Help Our University</h4>
-                        <p>De create building thinking about your requirment and latest treand on our marketplace area</p>
+                        <h4>Help University</h4>
+                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -260,8 +260,8 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/04.png" alt="Responsibility">
-                        <h4>Build Our Community</h4>
-                        <p>De create building thinking about your requirment and latest treand on our marketplace area</p>
+                        <h4>Build Community</h4>
+                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -273,66 +273,66 @@
 
     <!--== FunFact Area Start ==-->
     <section id="funfact-area">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <!--== Single FunFact Start ==-->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-funfact-wrap">
-                        <div class="funfact-icon">
-                            <img src="assets/img/fun-fact/user.svg" alt="Funfact">
-                        </div>
-                        <div class="funfact-info">
-                            <h5 class="funfact-count">25</h5>
-                            <p>Members</p>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <!--== Single FunFact Start ==-->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-funfact-wrap">
+                            <div class="funfact-icon">
+                                <img src="assets/img/fun-fact/user.svg" alt="Funfact">
+                            </div>
+                            <div class="funfact-info">
+                                <h5 class="funfact-count">25</h5>
+                                <p>Team Members</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--== Single FunFact End ==-->
+                    <!--== Single FunFact End ==-->
 
-                <!--== Single FunFact Start ==-->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-funfact-wrap">
-                        <div class="funfact-icon">
-                            <img src="assets/img/fun-fact/picture.svg" alt="Funfact">
-                        </div>
-                        <div class="funfact-info">
-                            <h5 class="funfact-count">1310</h5>
-                            <p>Photos</p>
+                    <!--== Single FunFact Start ==-->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-funfact-wrap">
+                            <div class="funfact-icon">
+                                <img src="assets/img/fun-fact/active_members.svg" alt="Funfact">
+                            </div>
+                            <div class="funfact-info">
+                                <h5 class="funfact-count">725</h5>
+                                <p>Active Users</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--== Single FunFact End ==-->
+                    <!--== Single FunFact End ==-->
 
-                <!--== Single FunFact Start ==-->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-funfact-wrap">
-                        <div class="funfact-icon">
-                            <img src="assets/img/fun-fact/event.svg" alt="Funfact">
-                        </div>
-                        <div class="funfact-info">
-                            <h5><span class="funfact-count">40</span>+</h5>
-                            <p>Events</p>
+                    <!--== Single FunFact Start ==-->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-funfact-wrap">
+                            <div class="funfact-icon">
+                                <img src="assets/img/fun-fact/event.svg" alt="Funfact">
+                            </div>
+                            <div class="funfact-info">
+                                <h5><span class="funfact-count">100</span>+</h5>
+                                <p>Events</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--== Single FunFact End ==-->
+                    <!--== Single FunFact End ==-->
 
-                <!--== Single FunFact Start ==-->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-funfact-wrap">
-                        <div class="funfact-icon">
-                            <img src="assets/img/fun-fact/medal.svg" alt="Funfact">
-                        </div>
-                        <div class="funfact-info">
-                            <h5><span class="funfact-count">5</span>+</h5>
-                            <p>Awards</p>
+                    <!--== Single FunFact Start ==-->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-funfact-wrap">
+                            <div class="funfact-icon">
+                                <img src="assets/img/fun-fact/predictions.svg" alt="Funfact">
+                            </div>
+                            <div class="funfact-info">
+                                <h5><span class="funfact-count">120,000</span>+</h5>
+                                <p>Predictions</p>
+                            </div>
                         </div>
                     </div>
+                    <!--== Single FunFact End ==-->
                 </div>
-                <!--== Single FunFact End ==-->
             </div>
-        </div>
-    </section>
+        </section>
     <!--== FunFact Area End ==-->
 
     <!--== Job Opportunity Area Start ==-->
@@ -509,7 +509,7 @@
             <div class="col-12">
                 <div class="stepper">
                     <!-- Step 1 -->
-                    <div class="step">
+                    <div class="step col-md-3 col-12">
                         <div class="step-icon">
                             <i class="fa fa-user"></i>
                         </div>
@@ -520,7 +520,7 @@
                     </div>
                     
                     <!-- Step 2 -->
-                    <div class="step">
+                    <div class="step col-md-3 col-12">
                         <div class="step-icon">
                             <i class="fa fa-clipboard"></i>
                         </div>
@@ -531,7 +531,7 @@
                     </div>
                     
                     <!-- Step 3 -->
-                    <div class="step">
+                    <div class="step col-md-3 col-12">
                         <div class="step-icon">
                             <i class="fa fa-check-circle"></i>
                         </div>
@@ -542,7 +542,7 @@
                     </div>
                     
                     <!-- Step 4 -->
-                    <div class="step">
+                    <div class="step col-md-3 col-12">
                         <div class="step-icon">
                             <i class="fa fa-lightbulb-o"></i>
                         </div>

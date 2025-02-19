@@ -747,7 +747,8 @@ blockquote:before {
 
 #header-area .header-bottom-area .main-menu .navbar-nav li a.special-link{
     color:#3b60c9 !important;
-    font-weight: 800;
+    font-weight: 400;
+    
 }
 
 #header-area
@@ -1664,7 +1665,7 @@ blockquote:before {
 }
 
 #scholership-promo {
-    background-image: url("../img/scholership.png");
+    background-image: url("../img/recuirtment_banner.png");
     padding: 100px 0 117px;
 }
 
@@ -2222,6 +2223,10 @@ blockquote:before {
     font-size: 1.6rem;
     line-height: 2.5600000000000005rem;
     margin-top: 150px;
+}
+
+#page-content-wrap .about-page-content-wrap .single-about-text .shade{
+    text-shadow:3px 3px 4px gray !important;
 }
 
 #page-content-wrap .about-page-content-wrap .single-about-text .year {
@@ -3420,6 +3425,9 @@ blockquote:before {
     height: 100%;
 }
 
+.contact-content-inner .map-area-wrap {
+    border-right: 3px solid;
+}
 .contact-content-inner .map-area-wrap iframe {
     border: none;
     width: 100%;

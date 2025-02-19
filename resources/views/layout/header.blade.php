@@ -64,7 +64,7 @@
                                     </ul>
                                 </li> -->
                                 <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link special-link" href="/form"><i class="fa fa-send"></i>Get Started</a></li>     
+                                <li class="nav-item"><a class="nav-link special-link" href="/form"><i class="fa fa-send"></i><span style="width:3px"> </span>Get Started</a></li>     
                             </ul>
                         </div>
                     </nav>
