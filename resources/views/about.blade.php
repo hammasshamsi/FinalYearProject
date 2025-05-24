@@ -97,7 +97,7 @@
                                 <img src="assets/img/fun-fact/predictions.svg" alt="Funfact">
                             </div>
                             <div class="funfact-info">
-                                <h5><span class="funfact-count">120,000</span>+</h5>
+                                <h5><span class="funfact-count">110</span>K+</h5>
                                 <p>Predictions</p>
                             </div>
                         </div>
