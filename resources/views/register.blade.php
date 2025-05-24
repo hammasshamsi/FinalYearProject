@@ -35,7 +35,8 @@
                                                     <div class="signin-area-wrap">
                                                         <h4>Already a Member?</h4>
                                                         <div class="sign-form">
-                                                            <form action="index.html">
+                                                            <form method="POST" action="{{ route('login') }}">
+                                                                @csrf
                                                                 <input type="text" placeholder="Enter your Email">
                                                                 <input type="password" placeholder="Password">
                                                                 <label><a href="#">Forgot Password?</a></label>
@@ -53,7 +54,8 @@
                                             <div class="register-form-wrap">
                                                 <h3>registration Form</h3>
                                                 <div class="register-form">
-                                                    <form action="index.html">
+                                                    <form method="POST" action="{{ route('register') }}">
+                                                        @csrf
                                                         <div class="row">
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
