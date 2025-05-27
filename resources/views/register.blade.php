@@ -35,10 +35,19 @@
                                                     <div class="signin-area-wrap">
                                                         <h4>Already a Member?</h4>
                                                         <div class="sign-form">
+                                                            @if ($errors->any())
+                                                                <div class="alert alert-danger">
+                                                                    <ul>
+                                                                        @foreach ($errors->all() as $error)
+                                                                            <li>{{ $error }}</li>
+                                                                        @endforeach
+                                                                    </ul>
+                                                                </div>
+                                                            @endif
                                                             <form method="POST" action="{{ route('login') }}">
                                                                 @csrf
-                                                                <input type="text" placeholder="Enter your Email">
-                                                                <input type="password" placeholder="Password">
+                                                                <input type="email" name="email" placeholder="Enter your Email">
+                                                                <input type="password" name="password" placeholder="Password">
                                                                 <label><a href="#">Forgot Password?</a></label>
                                                                 <button type="submit" class="btn btn-reg">Login</button>
                                                             </form>
@@ -60,14 +69,14 @@
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
                                                                     <label for="register_email">Email</label>
-                                                                    <input type="email" class="form-control" id="register_email" name="register_email">
+                                                                    <input type="email" class="form-control" id="register_email" name="email">
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
                                                                     <label for="register_password">Password</label>
-                                                                    <input type="password" class="form-control" id="register_password" name="register_password">
+                                                                    <input type="password" class="form-control" id="register_password" name="password">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -75,14 +84,14 @@
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
                                                                     <label for="register_name">Name</label>
-                                                                    <input type="text" class="form-control" id="register_name" name="register_name">
+                                                                    <input type="text" class="form-control" id="register_name" name="name">
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
                                                                     <label for="register_dob">Date of birth</label>
-                                                                    <input type="date" class="form-control" id="register_dob" name="register_dob">
+                                                                    <input type="date" class="form-control" id="register_dob" name="dob">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -90,11 +99,11 @@
                                                         <div class="gender form-group">
                                                             <label class="g-name d-block">Gender</label>
                                                             <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="register_gender_male" name="register_gender" value="mail" class="custom-control-input">
+                                                                <input type="radio" id="register_gender_male" name="gender" value="male" class="custom-control-input">
                                                                 <label class="custom-control-label" for="register_gender_male">Male</label>
                                                             </div>
                                                             <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="register_gender_female" name="register_gender" value="female" class="custom-control-input">
+                                                                <input type="radio" id="register_gender_female" name="gender" value="female" class="custom-control-input">
                                                                 <label class="custom-control-label" for="register_gender_female">Female</label>
                                                             </div>
                                                         </div>

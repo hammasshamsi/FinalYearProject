@@ -11,8 +11,33 @@
 
                 <div class="col-lg-6 col-sm-5 col-5 text-right">
                     <div class="preheader-right">
-                        <a title="Login" class="btn-auth btn-auth-rev" href="/register">Login</a>
-                        <a title="Register" class="btn-auth btn-auth" href="/register">Signup</a>
+                         @auth
+                            <!-- <div class="dropdown d-inline-block user-dropdown">
+                                <button class="btn btn-user dropdown-toggle" type="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span class="username">{{ Auth::user()->name }}</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="{{ route('profile.edit') }}">
+                                        <i class="fas fa-user"></i> Profile
+                                    </a>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button class="dropdown-item" type="submit">
+                                            <i class="fas fa-sign-out-alt"></i> Logout
+                                        </button>
+                                    </form>
+                                </div>
+                            </div> -->
+                            <a></a>
+                            <a></a>
+                        @else
+                            <a class="btn-auth btn-auth-rev" href="{{ route('login') }}">Login</a>
+                            <a class="btn-auth btn-auth" href="{{ route('register') }}">Register</a>
+                        @endauth
+
+                        <!-- <a title="Login" class="btn-auth btn-auth-rev" href="/register">Login</a>
+                        <a title="Register" class="btn-auth btn-auth" href="/register">Signup</a> -->
                     </div>
                 </div>
             </div>
@@ -37,34 +62,40 @@
                                 <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/event">Event</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="/bloglist" data-toggle="dropdown" role="button">Blog</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="/bloglist">Blog List</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/singleblog">Single Blog Right Sidebar</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/singleblogleftsidebar">Single Blog left Sidebar</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/singleblognosidebar">Single Blog No Sidebar</a></li>
-                                    </ul>
-                                </li> -->
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link dropdown-toggle" href="gallery.html" role="button">Gallery</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/singlealbum">Single Album</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link" href="/committee">Committee</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/directory">Directory</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/career">Career</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-offcanvas.html">Off Canvas Menu</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="typography.html">Typography</a></li>
-                                    </ul>
-                                </li> -->
+                                
                                 <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link special-link" href="/form"><i class="fa fa-send"></i><span style="width:3px"> </span>Get Started</a></li>     
+                                <li class="nav-item"><a class="nav-link special-link" href="/form"><i class="fa fa-send"></i><span style="width:3px"> </span>Get Started</a></li>   
+                                
+                                @auth
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle user-nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-user-circle"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right user-dropdown-menu" aria-labelledby="userDropdown">
+                                        <div class="dropdown-header user-dropdown-header text-center">
+                                            <i class="fa fa-user-circle" style="font-size: 2.5rem; color: #007bff; margin-bottom: 5px;"></i>
+                                            <div style="font-weight: 700; color: #222; font-size:12px">{{ Auth::user()->name }}</div>
+                                            <div style="font-size: 12px; color: #888;">{{ Auth::user()->email }}</div>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item user-dropdown-item" href="{{ route('profile.edit') }}">
+                                            <i class="fa fa-user"></i> Profile
+                                        </a>
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <button class="dropdown-item user-dropdown-item" type="submit">
+                                                <i class="fa fa-sign-out"></i> Logout
+                                            </button>
+                                        </form>
+                                    </div>
+                                </li>
+                                @else
+                                <li class="nav-item">
+                                   
+                                </li>
+                                @endauth
+                                
+
                             </ul>
                         </div>
                     </nav>
@@ -73,3 +104,41 @@
         </div>
     </div>
 </header>
+<style>
+
+
+.user-dropdown-menu {
+    min-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+}
+.user-dropdown-header {
+    padding: 18px 16px 10px 16px;
+    background: #f8f9fa;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 1px solid #eee;
+}
+.user-dropdown-item {
+    padding: 12px 20px;
+    font-size: 15px;
+    color: #333;
+    transition: background 0.2s, color 0.2s;
+}
+.user-dropdown-item i {
+    margin-right: 8px;
+    color: #007bff;
+}
+.user-dropdown-item:hover, .user-dropdown-item:focus {
+    background: #f0f4f8;
+    color: #007bff;
+    text-decoration: none;
+}
+.dropdown-divider {
+    margin: 0;
+}
+
+</style>
