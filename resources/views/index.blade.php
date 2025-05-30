@@ -69,10 +69,10 @@
         <!-- Social Icons Area Start -->
         <div class="social-networks-icon">
             <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i> <span>7.2k Likes</span></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i> <span>3.2m Followers</span></a></li>
-                <li><a href="#"><i class="fa fa-pinterest"></i> <span>7.2k Likes</span></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i> <span>2.2k Subscribers</span></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i> <span>7.2k Likes</span></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> <span>3.2m Followers</span></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i> <span>7.2k Likes</span></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i> <span>2.2k Subscribers</span></a></li>
             </ul>
         </div>
         <!-- Social Icons Area End -->
