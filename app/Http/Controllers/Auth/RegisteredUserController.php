@@ -34,15 +34,16 @@ class RegisteredUserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            'dob' => ['nullable|date'],
-            'gender' => ['nullable|in:male,female'],
+            'dob' => ['nullable','date'],
+            'gender' => ['nullable','in:male,female'],
         ]);
+        $dob = $request->dob ? date('Y-m-d', strtotime($request->dob)) : null;
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'dob' => $request->dob,
+            'dob' => $dob, //$request->dob
             'gender' => $request->gender,
         ]);
 

@@ -44,7 +44,7 @@
                                                                     </ul>
                                                                 </div>
                                                             @endif
-                                                            <form method="POST" action="{{ route('login') }}">
+                                                            <form id="login-form" method="POST" action="{{ route('login') }}">
                                                                 @csrf
                                                                 <input type="email" name="email" placeholder="Enter your Email">
                                                                 <input type="password" name="password" placeholder="Password">
@@ -63,8 +63,19 @@
                                             <div class="register-form-wrap">
                                                 <h3>registration Form</h3>
                                                 <div class="register-form">
-                                                    <form method="POST" action="{{ route('register') }}">
+                                                    <form id="register-form" method="POST" action="{{ route('register') }}">
                                                         @csrf
+
+                                                        @if ($errors->any())
+                                                            <div class="alert alert-danger">
+                                                                <ul>
+                                                                    @foreach ($errors->all() as $error)
+                                                                        <li>{{ $error }}</li>
+                                                                    @endforeach
+                                                                </ul>
+                                                            </div>
+                                                        @endif
+
                                                         <div class="row">
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
@@ -83,15 +94,25 @@
                                                         <div class="row">
                                                             <div class="col-12 col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label for="register_name">Name</label>
-                                                                    <input type="text" class="form-control" id="register_name" name="name">
+                                                                    <label for="register_password_confirmation">Confirm Password</label>
+                                                                    <input type="password" class="form-control" id="register_password_confirmation" name="password_confirmation" required>
+                                                                </div>
+                                                                
+
+                                                                <div class="form-group">
+                                                                    <label for="register_dob">Date of birth</label>
+                                                                    <input type="date" class="form-control" id="register_dob" name="dob">
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-12 col-sm-6">
+                                                                <!-- <div class="form-group">
+                                                                    <label for="register_name">Name</label>
+                                                                    <input type="text" class="form-control" id="register_name" name="name">
+                                                                </div> -->
                                                                 <div class="form-group">
-                                                                    <label for="register_dob">Date of birth</label>
-                                                                    <input type="date" class="form-control" id="register_dob" name="dob">
+                                                                    <label for="register_name">Name</label>
+                                                                    <input type="text" class="form-control" id="register_name" name="name">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -130,5 +151,13 @@
         </div>
     </section>
     <!--== Register Page Content End ==-->
+<script>
+    document.getElementById('login-form').addEventListener('submit', function () {
+    console.log('Login form submitted');
+});
 
+document.getElementById('register-form').addEventListener('submit', function () {
+    console.log('Register form submitted');
+});
+    </script>
 @endsection()
