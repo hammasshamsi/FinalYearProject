@@ -66,7 +66,7 @@
                                 <option value="">Select Gender</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
-                                <option value="Other">Other</option>
+                                <option value="2.0">Other</option>
                             </select>
                         </div>
                         <div class="mb-4">
@@ -152,9 +152,9 @@
                             <label for="visa-type" class="block mb-2 text-sm font-medium text-gray-900">Visa Type</label>
                             <select id="visa-type" name="visa-type" class="form-control" required>
                                 <option value="">Select Visa Type</option>
-                                <option value="study">Study Visa</option>
-                                <option value="work">Work Visa</option>
-                                <option value="immigration">Permanent Immigration</option>
+                                <option value="Student">Student Visa</option>
+                                <option value="Work">Work Visa</option>
+                                <option value="Immigration">Permanent Immigration</option>
                             </select>
                         </div>
                         <div class="mb-4">
@@ -214,6 +214,19 @@
                             <button type="submit" class="btn btn-success">Agree and Submit</button>
                         </div>
                     </div>
+                    <!-- Spinner -->
+                    <div id="loading-spinner" style="display: none; text-align: center; margin-top: 20px;">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+                    <!-- Result Container -->
+                    <div id="result-container" style="display: none; margin-top: 20px; text-align: center;">
+                        <h4 id="prediction-result" class="text-success"></h4>
+                        <p id="approval-probability" class="text-info"></p>
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -329,6 +342,20 @@
         font-size: 1.2rem;
         margin-top:20px;
     }
+
+    #loading-spinner .spinner-border {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #result-container h4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    #result-container p {
+        font-size: 1.2rem;
+    }
     
 </style>
 @endpush
@@ -369,48 +396,110 @@
         const prevBtns = document.querySelectorAll('.prev-step');
         const form = document.getElementById('stepper-form');
 
+        // function showStep(stepIndex) {
+        //     steps.forEach((step, index) => {
+        //         step.classList.toggle('active-step', index + 1 === stepIndex);
+        //     });
+
+        //     document.querySelectorAll('.step').forEach((step, index) => {
+        //         step.classList.toggle('active', index + 1 === stepIndex);
+        //     });
+        // }
+
+        // nextBtns.forEach(btn => btn.addEventListener('click', () => {
+        //     const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
+        //     showStep(currentStep + 1);
+        // }));
+
+        // prevBtns.forEach(btn => btn.addEventListener('click', () => {
+        //     const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
+        //     showStep(currentStep - 1);
+        // }));
+
+        // showStep(1); // Show the first step initially
+
         function showStep(stepIndex) {
-            steps.forEach((step, index) => {
-                step.classList.toggle('active-step', index + 1 === stepIndex);
+        steps.forEach((step, index) => {
+            const isActive = index + 1 === stepIndex;
+            step.classList.toggle('active-step', isActive);
+
+            // Add or remove 'required' attribute for inputs in the current step
+            const inputs = step.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                if (isActive) {
+                    input.setAttribute('required', 'required');
+                } else {
+                    input.removeAttribute('required');
+                }
             });
+        });
 
-            document.querySelectorAll('.step').forEach((step, index) => {
-                step.classList.toggle('active', index + 1 === stepIndex);
-            });
-        }
+        document.querySelectorAll('.step').forEach((step, index) => {
+            step.classList.toggle('active', index + 1 === stepIndex);
+        });
+    }
 
-        nextBtns.forEach(btn => btn.addEventListener('click', () => {
-            const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
-            showStep(currentStep + 1);
-        }));
+    nextBtns.forEach(btn => btn.addEventListener('click', () => {
+        const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
+        showStep(currentStep + 1);
+    }));
 
-        prevBtns.forEach(btn => btn.addEventListener('click', () => {
-            const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
-            showStep(currentStep - 1);
-        }));
+    prevBtns.forEach(btn => btn.addEventListener('click', () => {
+        const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
+        showStep(currentStep - 1);
+    }));
 
-        showStep(1); // Show the first step initially
+    showStep(1); // Show the first step initially
+
 
         // Handle form submission
         form.addEventListener('submit', async function (event) {
             event.preventDefault(); // Prevent default form submission
 
             const formData = new FormData(form);
+            const rawData = Object.fromEntries(formData.entries());
+
             const data = {
-                age: formData.get('age'),
-                gender: formData.get('gender'),
-                nationality: formData.get('nationality'),
-                current_country: formData.get('current_country'),
-                highest_education: formData.get('highest_education'),
-                field_of_study: formData.get('field_of_study'),
-                gpa: formData.get('gpa'),
-                ielts_score: formData.get('ielts_score'),
-                visa_type: formData.get('visa_type'),
-                applied_country: formData.get('applied_country'),
-                previous_travel_history: formData.get('previous_travel_history'),
-                bank_statement_amount: formData.get('bank_statement_amount'),
-                sponsorship_type: formData.get('sponsorship_type'),
-            };
+            name: rawData.name || "name",
+            email: rawData.email || "admin@email.com",
+            age: parseInt(rawData.age) || 27, // Default to 27 if missing
+            gender: rawData.gender,
+            nationality: rawData.nationality || "Pakistan",
+            current_country: rawData.current_country || "UAE",
+            highest_education: rawData.highest_education || "Bachelors",
+            field_of_study: rawData.field_study || "Computer Science",
+            gpa: parseFloat(rawData.cgpa) || 3.5,
+            ielts_score: parseFloat(rawData.ielts_score) || 7.0,
+            visa_type: rawData['visa-type'] || "Student",
+            applied_country: rawData.country || "Canada",
+            previous_travel_history: rawData.previous_travel_history || "No",
+            bank_statement_amount: parseFloat(rawData.bank_statment_amount) || 15000,
+            sponsorship_type: rawData.sponsership_type || "Self",
+        };
+
+        // Show the spinner
+        const spinner = document.getElementById('loading-spinner');
+        const resultContainer = document.getElementById('result-container');
+        const predictionResult = document.getElementById('prediction-result');
+        const approvalProbability = document.getElementById('approval-probability');
+
+        spinner.style.display = 'block'; // Show spinner
+        resultContainer.style.display = 'none';
+            // const data = {
+            //     age: formData.get('age'),
+            //     gender: formData.get('gender'),
+            //     nationality: formData.get('nationality'),
+            //     current_country: formData.get('current_country'),
+            //     highest_education: formData.get('highest_education'),
+            //     field_of_study: formData.get('field_of_study'),
+            //     gpa: formData.get('gpa'),
+            //     ielts_score: formData.get('ielts_score'),
+            //     visa_type: formData.get('visa_type'),
+            //     applied_country: formData.get('applied_country'),
+            //     previous_travel_history: formData.get('previous_travel_history'),
+            //     bank_statement_amount: formData.get('bank_statement_amount'),
+            //     sponsorship_type: formData.get('sponsorship_type'),
+            // };
 
             try {
                 const response = await fetch(form.action, {
@@ -423,16 +512,25 @@
                     body: JSON.stringify(data),
                 });
 
+                console.log("Data Passed To API: ",data);
+
                 const result = await response.json();
 
                 if (response.ok) {
-                    alert('Form submitted successfully!');
-                    console.log(result); // Handle success response
+                    spinner.style.display = 'none';
+                    // Display the prediction result
+                    predictionResult.textContent = `Prediction: ${result.prediction}`;
+                    approvalProbability.textContent = `Approval Probability: ${(result.approval_probability * 100).toFixed(2)}%`;
+                    resultContainer.style.display = 'block';
+                    // alert('Form submitted successfully!');
+                    // console.log(result); // Handle success response
                 } else {
+                    spinner.style.display = 'none';
                     alert('Failed to submit the form.');
                     console.error(result); // Handle error response
                 }
             } catch (error) {
+                spinner.style.display = 'none';
                 console.error('Error:', error);
                 alert('An error occurred while submitting the form.');
             }
