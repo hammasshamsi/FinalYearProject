@@ -25,6 +25,15 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="register-page-inner">
+                            <!-- @if ($errors->any())
+                                <div class="alert alert-danger custom-error">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li style="text-align:center;">{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif -->
                             <div class="col-lg-10 m-auto">
                                 <div class="register-form-content">
                                     <div class="row">
@@ -35,7 +44,7 @@
                                                     <div class="signin-area-wrap">
                                                         <h4>Already a Member?</h4>
                                                         <div class="sign-form">
-                                                            @if ($errors->any())
+                                                            <!-- @if ($errors->any())
                                                                 <div class="alert alert-danger">
                                                                     <ul>
                                                                         @foreach ($errors->all() as $error)
@@ -43,9 +52,10 @@
                                                                         @endforeach
                                                                     </ul>
                                                                 </div>
-                                                            @endif
+                                                            @endif -->
                                                             <form id="login-form" method="POST" action="{{ route('login') }}">
                                                                 @csrf
+                                                                <input type="hidden" name="_form" value="login">
                                                                 <input type="email" name="email" placeholder="Enter your Email">
                                                                 <input type="password" name="password" placeholder="Password">
                                                                 <label><a href="#">Forgot Password?</a></label>
@@ -65,8 +75,8 @@
                                                 <div class="register-form">
                                                     <form id="register-form" method="POST" action="{{ route('register') }}">
                                                         @csrf
-
-                                                        @if ($errors->any())
+                                                        <input type="hidden" name="_form" value="register">
+                                                        <!-- @if ($errors->any())
                                                             <div class="alert alert-danger">
                                                                 <ul>
                                                                     @foreach ($errors->all() as $error)
@@ -74,7 +84,7 @@
                                                                     @endforeach
                                                                 </ul>
                                                             </div>
-                                                        @endif
+                                                        @endif -->
 
                                                         <div class="row">
                                                             <div class="col-12 col-sm-6">
@@ -151,13 +161,59 @@
         </div>
     </section>
     <!--== Register Page Content End ==-->
+
+<style>
+    .swal2-popup .nice-select {
+        all: unset;
+        /* Or */
+        display: none !important;
+    }
+    .swal2-confirm{
+        width: 80px;
+        font-size:1.2em;
+    }
+</style>
+
+@push('scripts')
 <script>
     document.getElementById('login-form').addEventListener('submit', function () {
-    console.log('Login form submitted');
-});
+        console.log('Login form submitted');
+    });
 
-document.getElementById('register-form').addEventListener('submit', function () {
-    console.log('Register form submitted');
-});
-    </script>
+    document.getElementById('register-form').addEventListener('submit', function () {
+        console.log('Register form submitted');
+    });
+
+    @if ($errors->any())
+        let formName = '';
+        @if (old('_form') === 'login')
+            formName = 'Login';
+        @elseif (old('_form') === 'register')
+            formName = 'Register';
+        @endif
+
+        // let errorMsg = `<ul style="text-align:left;">{!! implode('', $errors->all('<li>:message</li>')) !!}</ul>`;
+        let errorMsg = `<ul style="text-align:center;">@foreach ($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul>`;
+
+        console.log('Form Name:', formName);
+        console.log('Error Message:', errorMsg);
+
+       Swal.fire({
+            icon: 'error',
+            title: `<span style="color:#d33">${formName} Error</span>`,
+            html: `<div style="text-align:center;">${errorMsg}</div>`,
+            width: 420,
+            padding: '2em',
+            background: '#fff',
+            customClass: {
+                popup: 'swal2-border-radius'
+            },
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'OK',
+            allowOutsideClick: false,
+        });
+    
+    @endif
+</script>
+@endpush
 @endsection()

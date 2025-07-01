@@ -94,6 +94,8 @@
 
     <!-- Main Master Style  CSS  -->
     <link id="cbx-style" data-layout="1" rel="stylesheet" href="{{ asset('assets/css/style-default.min.css') }}" media="all">
+    <!-- SweetAlert2 Style  CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.min.css" rel="stylesheet">
 @stack('styles')
 </head>
 <body>
@@ -173,7 +175,7 @@
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 <!-- custom js: custom scripts for theme style switcher for demo purpose  -->
- 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.all.min.js"></script>
 
 @stack('scripts')
 
