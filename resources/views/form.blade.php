@@ -58,11 +58,11 @@
                         </div>
                         <div class="mb-4">
                             <label for="nationality" class="block mb-2 text-sm font-medium text-gray-900">Nationality<span style="color:red"> *</span></label>
-                            <!-- <input type="text" id="nationality" name="nationality" class="form-control" placeholder="eg; Pakistan" required> -->
-                             <div id="nationality" class="nice-select form-control" tabindex="0" data-required="true">
+                            <input type="text" id="nationality" name="nationality" class="form-control" value="Pakistan" required disabled>
+                             <!-- <div id="nationality" class="nice-select form-control" tabindex="0" data-required="true">
                                     <span class="current">Loading countries...</span>
                                     <ul class="list"></ul>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="mb-4">
                             <label for="gender" class="block mb-2 text-sm font-medium text-gray-900">Gender<span style="color:red"> *</span></label>
@@ -91,12 +91,11 @@
                         </div>
                         <div class="mb-4">
                             <label for="current_country" class="block mb-2 text-sm font-medium text-gray-900">Current Country<span style="color:red"> *</span></label>
-                            <!-- <input type="text" id="current_country" name="current_country" class="form-control" placeholder="eg; Pakistan" required> -->
-                            <div id="current_country" class="nice-select form-control" tabindex="0" data-required="true">
+                            <input type="text" id="current_country" name="current_country" class="form-control" value="Pakistan" required disabled>
+                            <!-- <div id="current_country" class="nice-select form-control" tabindex="0" data-required="true">
                                     <span class="current">Loading countries...</span>
                                     <ul class="list"></ul>
-                            </div>
-
+                            </div> -->
                         </div>
                         <div class="mb-4">
                             <label for="highest_education" class="block mb-2 text-sm font-medium text-gray-900">Highest Education<span style="color:red"> *</span> </label>
@@ -104,18 +103,16 @@
                              <select id="highest_education" name="highest_education" class="form-control" required>
                                 <option value="">Select Highest Education</option>
                                 <option value="Bachelors">Bachelor's</option>
-                                <option value="Masters">Masters</option>
+                                <option value="Masters">Master's</option>
                                 <option value="PHD">PHD</option>
                             </select>
                         </div>
+
                         <div class="mb-4">
-                            <label for="field_study" class="block mb-2 text-sm font-medium text-gray-900">Field Of Study<span style="color:red"> *</span></label>
-                            <input type="text" id="field_study" name="field_study" class="form-control" placeholder="eg; Computer Science" required>
+                            <label for="age" class="block mb-2 text-sm font-medium text-gray-900">Your Age<span style="color:red"> *</span></label>
+                            <input type="number" id="age" name="age" class="form-control" placeholder="YYYY" required>
                         </div>
-                        <div class="mb-4">
-                            <label for="ielts_score" class="block mb-2 text-sm font-medium text-gray-900">IELTS Score<span style="color:red"> *</span></label>
-                            <input type="text" id="ielts_score" name="ielts_score" class="form-control" placeholder="eg; 6.5" required>
-                        </div>
+                        
 
 
                         <div class="text-right">
@@ -147,6 +144,25 @@
                             <input type="text" id="university-id" name="university-id" class="form-control" placeholder="University ID" optional>
                         </div>
                         <div class="mb-4">
+                            <label for="field_study" class="block mb-2 text-sm font-medium text-gray-900">Field Of Study<span style="color:red"> *</span></label>
+                            <input type="text" id="field_study" name="field_study" class="form-control" placeholder="eg; Computer Science" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="ielts_score" class="block mb-2 text-sm font-medium text-gray-900">IELTS Score<span style="color:red"> *</span></label>
+                            <!-- <input type="text" id="ielts_score" name="ielts_score" class="form-control" placeholder="eg; 6.5" required> -->
+                            <select id="ielts_score" name="ielts_score" class="form-control" required>
+                                <option value="">Select Highest Education</option>
+                                <option value="5.5">5.5</option>
+                                <option value="6.0">6.0</option>
+                                <option value="6.5">6.5</option>
+                                <option value="7.0">7.0</option>
+                                <option value="7.5">7.5</option>
+                                <option value="8.0">8.0</option>
+                                <option value="8.5">8.5</option>
+                                <option value="9.0">9.0</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
                             <label for="document" class="block mb-2 text-sm font-medium text-gray-900">Upload Documents <span style="color:green;font-size:12px;">(optional)</span></label>
                             <input type="file" id="document" name="document" class="form-control">
                         </div>
@@ -162,10 +178,23 @@
                         <div class="mb-4">
                             <label for="country" class="block mb-2 text-sm font-medium text-gray-900">Preferred/Applied Country<span style="color:red"> *</span></label>
                             <!-- <input type="text" id="country" name="country" class="form-control" placeholder="Country name" required> -->
-                             <div id="country" class="nice-select form-control" tabindex="0" data-required="true">
+                             <!-- <div id="country" class="nice-select form-control" tabindex="0" data-required="true">
                                     <span class="current">Loading countries...</span>
                                     <ul class="list"></ul>
-                            </div>
+                            </div> -->
+                            <select id="country" name="country" class="form-control" required>
+                                <option value="">Select Country</option>
+                                <option value="Canada">Canada</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="China">China</option>
+                                <option value="Italy">Italy</option>
+                                <option value="France">France</option>
+                                <option value="Switzerland">Switzerland</option>
+                            </select>
                         </div>
                         <div class="mb-4">
                             <label for="visa-type" class="block mb-2 text-sm font-medium text-gray-900">Visa Type<span style="color:red"> *</span></label>
@@ -178,7 +207,7 @@
                         </div>
                         <div class="mb-4">
                             <label for="preferences" class="block mb-2 text-sm font-medium text-gray-900">Additional <span style="color:green;font-size:12px;">(optional)</span></label>
-                            <textarea id="preferences" name="preferences" class="form-control" rows="4" placeholder="Any other preferences related to country or study/immigration" required></textarea>
+                            <textarea id="preferences" name="preferences" class="form-control" rows="4" placeholder="Any other preferences related to country or study/immigration"></textarea>
                         </div>
                         <div class="mb-4">
                             <label for="previous_travel_history" class="block mb-2 text-sm font-medium text-gray-900">Previous Travel History<span style="color:red"> *</span></label>
@@ -249,8 +278,14 @@
 
                     <!-- Result Container -->
                     <div id="result-container" style="display: none; margin-top: 20px; text-align: center;">
-                        <h4 id="prediction-result" class="text-success"></h4>
-                        <p id="approval-probability" class="text-info"></p>
+                        <div id="prediction-card" class="card shadow p-4 mb-4" style="max-width: 500px; margin: 0 auto; border-radius: 1rem;">
+                            <div id="prediction-icon" style="font-size: 3rem; margin-bottom: 10px;"></div>
+                            <h4 id="prediction-result" class="text-success mb-2"></h4>
+                            <p id="approval-probability" class="text-info mb-0"></p>
+                        </div>
+                        <div class="row justify-content-center" id="consultancy-links" style="gap: 20px;">
+                            <!-- Consultancy cards will be injected here -->
+                        </div>
                     </div>
 
                 </form>
@@ -390,7 +425,10 @@
         color:black;
     }
     .nice-select{
-        padding-top:1px !important;
+        padding-top:0px !important;
+        height:36px;
+        margin-bottom:6px;
+        font-size:13px;
     }
     .swal2-confirm{
         width: 80px !important;
@@ -398,6 +436,41 @@
     #swal2-title{
         height: 65px !important;
     }
+    .mb-4 input{
+        height:36px;
+        font-size:13px;
+    }
+
+    .card {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+.consultancy-card {
+    background: #f8f9fa;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    width: 220px;
+    transition: box-shadow 0.2s;
+    display: inline-block;
+}
+.consultancy-card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    background: #e9f7fe;
+}
+.consultancy-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.consultancy-link:hover {
+    text-decoration: underline;
+}
 </style>
 @endpush
 
@@ -498,7 +571,7 @@
             }
         });
 
-        if (allValid && validateStep()) {
+        if (allValid) {
             showStep(currentStepIndex + 2); // Move to next step
         } else {
             swal.fire({
@@ -561,80 +634,117 @@
     //         niceSelectContainer.querySelector('.current').textContent = 'Failed to load countries';
     //     });
 
-const nationalityContainer = document.getElementById('nationality');
-const countryContainer = document.getElementById('country');
-const currentCountryContainer = document.getElementById('current_country');
+// const nationalityContainer = document.getElementById('nationality');
+// const countryContainer = document.getElementById('country');
+// const currentCountryContainer = document.getElementById('current_country');
 
-// Fetch country data and populate the dropdowns
-const fetchCountriesAndPopulate = (container) => {
-    const countryList = container.querySelector('ul.list');
+// // Fetch country data and populate the dropdowns
+// const fetchCountriesAndPopulate = (container) => {
+//     const countryList = container.querySelector('ul.list');
 
-    // Fetch the country data
-    fetch('https://restcountries.com/v3.1/all?fields=name')
-        .then(response => response.json())
-        .then(data => {
-            // Clear the loading message
-            container.querySelector('.current').textContent = 'Select your country';
-            countryList.innerHTML = '';  // Clear any existing list items
+//     // Fetch the country data
+//     fetch('https://restcountries.com/v3.1/all?fields=name')
+//         .then(response => response.json())
+//         .then(data => {
+//             // Clear the loading message
+//             container.querySelector('.current').textContent = 'Select your country';
+//             countryList.innerHTML = '';  // Clear any existing list items
 
-            // Extract and sort country names
-            const countryNames = data
-                .map(country => country.name?.common)
-                .filter(Boolean) // Remove null or undefined values
-                .sort((a, b) => a.localeCompare(b)); // Sort alphabetically
+//             // Extract and sort country names
+//             const countryNames = data
+//                 .map(country => country.name?.common)
+//                 .filter(Boolean) // Remove null or undefined values
+//                 .sort((a, b) => a.localeCompare(b)); // Sort alphabetically
 
-            // Add country options as list items
-            countryNames.forEach(country => {
-                const li = document.createElement('li');
-                li.classList.add('option');
-                li.setAttribute('data-value', country);
-                li.textContent = country;
-                countryList.appendChild(li);
-            });
+//             // Add country options as list items
+//             countryNames.forEach(country => {
+//                 const li = document.createElement('li');
+//                 li.classList.add('option');
+//                 li.setAttribute('data-value', country);
+//                 li.textContent = country;
+//                 countryList.appendChild(li);
+//             });
 
-            // Reinitialize nice-select to update the UI
-            $(container).niceSelect('update');
-        })
-        .catch(error => {
-            console.error('Error fetching countries:', error);
-            container.querySelector('.current').textContent = 'Failed to load countries';
-        });
-};
+//             // Reinitialize nice-select to update the UI
+//             $(container).niceSelect('update');
+//         })
+//         .catch(error => {
+//             console.error('Error fetching countries:', error);
+//             container.querySelector('.current').textContent = 'Failed to load countries';
+//         });
+// };
 
-// Fetch and populate countries for both Preferred/Applied Country and Current Country
-fetchCountriesAndPopulate(countryContainer);
-fetchCountriesAndPopulate(currentCountryContainer);
-fetchCountriesAndPopulate(nationalityContainer);
+// // Fetch and populate countries for both Preferred/Applied Country and Current Country
+// fetchCountriesAndPopulate(countryContainer);
+// fetchCountriesAndPopulate(currentCountryContainer);
+// fetchCountriesAndPopulate(nationalityContainer);
 
-const validateStep = () => {
-    const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
-    let isValid = true;
+// const validateStep = () => {
+//     const currentStep = [...steps].findIndex(step => step.classList.contains('active-step')) + 1;
+//     let isValid = true;
 
-    // Get the current step container
-    const currentStepContainer = steps[currentStep - 1];
+//     // Get the current step container
+//     const currentStepContainer = steps[currentStep - 1];
 
-    // Check if the current step has the nationality dropdown and if it's selected
-    if (currentStepContainer.querySelector('#nationality')) {
-        const nationalityContainer = document.getElementById('nationality');
-        const selectedNationality = nationalityContainer.querySelector('.current').textContent;
+//     // Check if the current step has the nationality dropdown and if it's selected
+//     if (currentStepContainer.querySelector('#nationality')) {
+//         const nationalityContainer = document.getElementById('nationality');
+//         const selectedNationality = nationalityContainer.querySelector('.current').textContent;
 
-        // If no country is selected, mark it as invalid
-        if (selectedNationality === 'Loading countries...' || selectedNationality === 'Select your nationality') {
-            isValid = false;
-            nationalityContainer.classList.add('error');  // Optional: add error class for styling
-            alert('Please select your nationality.');
-        } else {
-            nationalityContainer.classList.remove('error');  // Remove error class if valid
-        }
+//         // If no country is selected, mark it as invalid
+//         if (selectedNationality === 'Loading countries...' || selectedNationality === 'Select your nationality') {
+//             isValid = false;
+//             nationalityContainer.classList.add('error');  // Optional: add error class for styling
+//             alert('Please select your nationality.');
+//         } else {
+//             nationalityContainer.classList.remove('error');  // Remove error class if valid
+//         }
+//     }
+
+//     // You can add more validation for other fields in the current step here...
+
+//     return isValid;
+// };
+
+
+    const resultContainer = document.getElementById('result-container');
+    const predictionResult = document.getElementById('prediction-result');
+    const approvalProbability = document.getElementById('approval-probability');
+    const predictionIcon = document.getElementById('prediction-icon');
+    const consultancyLinks = document.getElementById('consultancy-links');
+
+    function renderConsultancyCards() {
+        // Example consultancies (replace with your real data/links)
+        const consultancies = [
+            { 
+            name: "VisaPro Experts", 
+            link: "https://example.com/consultancy1",
+            img: "https://randomuser.me/api/portraits/men/32.jpg"
+            },
+            { 
+                name: "Global Study Hub", 
+                link: "https://example.com/consultancy2",
+                img: "https://randomuser.me/api/portraits/women/44.jpg"
+            },
+            { 
+                name: "EduWorld Consultants", 
+                link: "https://example.com/consultancy3",
+                img: "https://randomuser.me/api/portraits/men/65.jpg"
+            },
+            { 
+                name: "ImmigrateNow", 
+                link: "https://example.com/consultancy4",
+                img: "https://randomuser.me/api/portraits/women/68.jpg"
+            }
+        ];
+        consultancyLinks.innerHTML = consultancies.map(c => `
+            <div class="consultancy-card">
+            <img src="${c.img}" alt="${c.name}" style="width:70px;height:70px;border-radius:50%;object-fit:cover;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+            <div style="font-weight:600; margin-bottom:6px;">${c.name}</div>
+            <a class="consultancy-link" href="${c.link}" target="_blank">Visit Consultancy</a>
+        </div>
+        `).join('');
     }
-
-    // You can add more validation for other fields in the current step here...
-
-    return isValid;
-};
-
-
-
 
         // Handle form submission
         form.addEventListener('submit', async function (event) {
@@ -644,23 +754,23 @@ const validateStep = () => {
             const rawData = Object.fromEntries(formData.entries());
 
             // Get values from nice-select dropdowns
-            const nationality = document.querySelector('#nationality .current')?.textContent?.trim();
-            const current_country = document.querySelector('#current_country .current')?.textContent?.trim();
-            const applied_country = document.querySelector('#country .current')?.textContent?.trim();
+            // const nationality = document.querySelector('#nationality .current')?.textContent?.trim();
+            // const current_country = document.querySelector('#current_country .current')?.textContent?.trim();
+            // const applied_country = document.querySelector('#country .current')?.textContent?.trim();
 
             const data = {
             name: rawData.name || "name",
             email: rawData.email || "admin@email.com",
             age: parseInt(rawData.age) || 27, // Default to 27 if missing
             gender: rawData.gender,
-            nationality: (nationality && nationality !== 'Loading countries...' && nationality !== 'Select your nationality') ? nationality : "Pakistan", //rawData.nationality || "Pakistan",
-            current_country: (current_country && current_country !== 'Loading countries...' && current_country !== 'Select your country') ? current_country : "UAE", //rawData.current_country || "UAE",
+            nationality: rawData.nationality || "Pakistan", //(nationality && nationality !== 'Loading countries...' && nationality !== 'Select your nationality') ? nationality : "Pakistan"
+            current_country:  rawData.current_country || "Pakistan", //(current_country && current_country !== 'Loading countries...' && current_country !== 'Select your country') ? current_country : "UAE",
             highest_education: rawData.highest_education || "Bachelors",
             field_of_study: rawData.field_study || "Computer Science",
             gpa: parseFloat(rawData.cgpa) || 3.5,
             ielts_score: parseFloat(rawData.ielts_score) || 7.0,
             visa_type: rawData['visa-type'] || "Student",
-            applied_country: (applied_country && applied_country !== 'Loading countries...' && applied_country !== 'Select your country') ? applied_country : "Canada", //rawData.country || "Canada",
+            applied_country:  rawData.country || "Canada", //(applied_country && applied_country !== 'Loading countries...' && applied_country !== 'Select your country') ? applied_country : "Canada",
             previous_travel_history: rawData.previous_travel_history || "No",
             bank_statement_amount: parseFloat(rawData.bank_statment_amount) || 15000,
             sponsorship_type: rawData.sponsership_type || "Self",
@@ -692,11 +802,19 @@ const validateStep = () => {
                 if (response.ok) {
                     spinner.style.display = 'none';
                     // Display the prediction result
+                    // predictionResult.textContent = `Prediction: ${result.prediction}`;
+                    // approvalProbability.textContent = `Approval Probability: ${(result.approval_probability * 100).toFixed(2)}%`;
+                    // resultContainer.style.display = 'block';
+
+                    const isApproved = result.prediction && result.prediction.toLowerCase().includes('approve');
+                    predictionIcon.innerHTML = isApproved
+                        ? '<span style="color:#28a745;">&#10004;</span>' // Green check
+                        : '<span style="color:#dc3545;">&#10006;</span>'; // Red cross
                     predictionResult.textContent = `Prediction: ${result.prediction}`;
                     approvalProbability.textContent = `Approval Probability: ${(result.approval_probability * 100).toFixed(2)}%`;
+                    renderConsultancyCards();
                     resultContainer.style.display = 'block';
-                    // alert('Form submitted successfully!');
-                    // console.log(result); // Handle success response
+                    
                 } else {
                     spinner.style.display = 'none';
                     alert('Failed to submit the form.');
