@@ -33,6 +33,11 @@ Route::middleware('auth')->group(function () {
     });
 
     Route::post('/api/submit-form', [FormController::class, 'submit'])->name('api.submit.form');
+    
+    Route::post('/form/submit', [FormController::class, 'submit'])->name('form.submit');
+    Route::get('/result', [FormController::class, 'result'])->name('result');
 });
-
+// Route::get('/result', function () {
+//     return view('result');
+// });
 require __DIR__.'/auth.php';

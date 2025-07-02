@@ -270,23 +270,28 @@
                         </div>
                     </div>
                     <!-- Spinner -->
-                    <div id="loading-spinner" style="display: none; text-align: center; margin-top: 20px;">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="sr-only">Loading...</span>
+                    <!-- Overlay Spinner -->
+                    <div id="form-overlay-spinner" style="display:none;">
+                        <div class="overlay-bg"></div>
+                        <div class="overlay-spinner">
+                            <div class="spinner-border text-primary" role="status" style="width:4rem;height:4rem;">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div style="margin-top:1rem;font-weight:600;">Processing...</div>
                         </div>
                     </div>
 
                     <!-- Result Container -->
-                    <div id="result-container" style="display: none; margin-top: 20px; text-align: center;">
+                    <!-- <div id="result-container" style="display: none; margin-top: 20px; text-align: center;">
                         <div id="prediction-card" class="card shadow p-4 mb-4" style="max-width: 500px; margin: 0 auto; border-radius: 1rem;">
                             <div id="prediction-icon" style="font-size: 3rem; margin-bottom: 10px;"></div>
                             <h4 id="prediction-result" class="text-success mb-2"></h4>
                             <p id="approval-probability" class="text-info mb-0"></p>
                         </div>
                         <div class="row justify-content-center" id="consultancy-links" style="gap: 20px;">
-                            <!-- Consultancy cards will be injected here -->
+                          
                         </div>
-                    </div>
+                    </div> -->
 
                 </form>
             </div>
@@ -404,10 +409,25 @@
         margin-top:20px;
     }
 
-    #loading-spinner .spinner-border {
-        width: 3rem;
-        height: 3rem;
-    }
+    #form-overlay-spinner {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form-overlay-spinner .overlay-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.85);
+    z-index: 1;
+}
+#form-overlay-spinner .overlay-spinner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
 
     #result-container h4 {
         font-size: 1.5rem;
@@ -441,7 +461,7 @@
         font-size:13px;
     }
 
-    .card {
+    /* .card {
     background: #fff;
     border: 1px solid #e3e3e3;
     border-radius: 1rem;
@@ -470,7 +490,7 @@
 }
 .consultancy-link:hover {
     text-decoration: underline;
-}
+} */
 </style>
 @endpush
 
@@ -707,48 +727,49 @@
 // };
 
 
-    const resultContainer = document.getElementById('result-container');
-    const predictionResult = document.getElementById('prediction-result');
-    const approvalProbability = document.getElementById('approval-probability');
-    const predictionIcon = document.getElementById('prediction-icon');
-    const consultancyLinks = document.getElementById('consultancy-links');
+    // const resultContainer = document.getElementById('result-container');
+    // const predictionResult = document.getElementById('prediction-result');
+    // const approvalProbability = document.getElementById('approval-probability');
+    // const predictionIcon = document.getElementById('prediction-icon');
+    // const consultancyLinks = document.getElementById('consultancy-links');
 
-    function renderConsultancyCards() {
-        // Example consultancies (replace with your real data/links)
-        const consultancies = [
-            { 
-            name: "VisaPro Experts", 
-            link: "https://example.com/consultancy1",
-            img: "https://randomuser.me/api/portraits/men/32.jpg"
-            },
-            { 
-                name: "Global Study Hub", 
-                link: "https://example.com/consultancy2",
-                img: "https://randomuser.me/api/portraits/women/44.jpg"
-            },
-            { 
-                name: "EduWorld Consultants", 
-                link: "https://example.com/consultancy3",
-                img: "https://randomuser.me/api/portraits/men/65.jpg"
-            },
-            { 
-                name: "ImmigrateNow", 
-                link: "https://example.com/consultancy4",
-                img: "https://randomuser.me/api/portraits/women/68.jpg"
-            }
-        ];
-        consultancyLinks.innerHTML = consultancies.map(c => `
-            <div class="consultancy-card">
-            <img src="${c.img}" alt="${c.name}" style="width:70px;height:70px;border-radius:50%;object-fit:cover;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-            <div style="font-weight:600; margin-bottom:6px;">${c.name}</div>
-            <a class="consultancy-link" href="${c.link}" target="_blank">Visit Consultancy</a>
-        </div>
-        `).join('');
-    }
-
+    // function renderConsultancyCards() {
+    //     // Example consultancies (replace with your real data/links)
+    //     const consultancies = [
+    //         { 
+    //         name: "VisaPro Experts", 
+    //         link: "https://example.com/consultancy1",
+    //         img: "https://randomuser.me/api/portraits/men/32.jpg"
+    //         },
+    //         { 
+    //             name: "Global Study Hub", 
+    //             link: "https://example.com/consultancy2",
+    //             img: "https://randomuser.me/api/portraits/women/44.jpg"
+    //         },
+    //         { 
+    //             name: "EduWorld Consultants", 
+    //             link: "https://example.com/consultancy3",
+    //             img: "https://randomuser.me/api/portraits/men/65.jpg"
+    //         },
+    //         { 
+    //             name: "ImmigrateNow", 
+    //             link: "https://example.com/consultancy4",
+    //             img: "https://randomuser.me/api/portraits/women/68.jpg"
+    //         }
+    //     ];
+    //     consultancyLinks.innerHTML = consultancies.map(c => `
+    //         <div class="consultancy-card">
+    //         <img src="${c.img}" alt="${c.name}" style="width:70px;height:70px;border-radius:50%;object-fit:cover;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    //         <div style="font-weight:600; margin-bottom:6px;">${c.name}</div>
+    //         <a class="consultancy-link" href="${c.link}" target="_blank">Visit Consultancy</a>
+    //     </div>
+    //     `).join('');
+    // }
+    const overlaySpinner = document.getElementById('form-overlay-spinner');
         // Handle form submission
         form.addEventListener('submit', async function (event) {
             event.preventDefault(); // Prevent default form submission
+            overlaySpinner.style.display = 'flex';
 
             const formData = new FormData(form);
             const rawData = Object.fromEntries(formData.entries());
@@ -777,13 +798,13 @@
         };
 
         // Show the spinner
-        const spinner = document.getElementById('loading-spinner');
-        const resultContainer = document.getElementById('result-container');
-        const predictionResult = document.getElementById('prediction-result');
-        const approvalProbability = document.getElementById('approval-probability');
+        
+        // const resultContainer = document.getElementById('result-container');
+        // const predictionResult = document.getElementById('prediction-result');
+        // const approvalProbability = document.getElementById('approval-probability');
 
-        spinner.style.display = 'block'; // Show spinner
-        resultContainer.style.display = 'none';
+        
+        // resultContainer.style.display = 'none';
             try {
                 const response = await fetch(form.action, {
                     method: 'POST',
@@ -800,28 +821,28 @@
                 const result = await response.json();
 
                 if (response.ok) {
-                    spinner.style.display = 'none';
+                    overlaySpinner.style.display = 'none';
                     // Display the prediction result
                     // predictionResult.textContent = `Prediction: ${result.prediction}`;
                     // approvalProbability.textContent = `Approval Probability: ${(result.approval_probability * 100).toFixed(2)}%`;
                     // resultContainer.style.display = 'block';
-
-                    const isApproved = result.prediction && result.prediction.toLowerCase().includes('approve');
-                    predictionIcon.innerHTML = isApproved
-                        ? '<span style="color:#28a745;">&#10004;</span>' // Green check
-                        : '<span style="color:#dc3545;">&#10006;</span>'; // Red cross
-                    predictionResult.textContent = `Prediction: ${result.prediction}`;
-                    approvalProbability.textContent = `Approval Probability: ${(result.approval_probability * 100).toFixed(2)}%`;
-                    renderConsultancyCards();
-                    resultContainer.style.display = 'block';
+                     window.location.href = `/result?prediction=${encodeURIComponent(result.prediction)}&prob=${encodeURIComponent(result.approval_probability)}`;
+                    // const isApproved = result.prediction && result.prediction.toLowerCase().includes('approve');
+                    // predictionIcon.innerHTML = isApproved
+                    //     ? '<span style="color:#28a745;">&#10004;</span>' // Green check
+                    //     : '<span style="color:#dc3545;">&#10006;</span>'; // Red cross
+                    // predictionResult.textContent = `Prediction: ${result.prediction}`;
+                    // approvalProbability.textContent = `Approval Probability: ${(result.approval_probability * 100).toFixed(2)}%`;
+                    // renderConsultancyCards();
+                    // resultContainer.style.display = 'block';
                     
                 } else {
-                    spinner.style.display = 'none';
+                    overlaySpinner.style.display = 'none';
                     alert('Failed to submit the form.');
                     console.error(result); // Handle error response
                 }
             } catch (error) {
-                spinner.style.display = 'none';
+                overlaySpinner.style.display = 'none';
                 console.error('Error:', error);
                 alert('An error occurred while submitting the form.');
             }
