@@ -264,6 +264,16 @@
                         <p><input type="checkbox"  id="privacy" name="privacy"><span></span> I agree to the collection, storage, and processing of my personal data as described in the <a href="#">Privacy Policy</a></p>
                         <p><input type="checkbox" id="third_party" name="third_party"><span></span> I consent to my data being shared with trusted third-party partners if needed</p>
                         <p><input type="checkbox" id="visa_analysis" name="visa_analysis"><span></span> I consent to my data being used for visa prediction analysis and recommendations.</p>
+
+                        <!-- Disclaimer Section -->
+                        <div class="alert alert-warning mt-4" style="border-left: 5px solid #ffc107 ; padding: 15px; background-color: #fff8e1;">
+                            <h4 class="text-warning" style="font-weight: bold;">Disclaimer</h4>
+                            <p style="margin: 0; font-size: 14px;">
+                                Please note that our predictions are based on AI-powered analysis and are not 100% accurate. 
+                                We do not guarantee visa approval or certainty, as the final decision lies with the respective immigration authorities.
+                            </p>
+                        </div>
+
                         <div class="text-right">
                             <button type="button" class="btn btn-secondary prev-step">Previous</button>
                             <button type="submit" class="btn btn-success">Agree and Submit</button>

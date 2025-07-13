@@ -9,7 +9,7 @@
                         <div class="widgei-body">
                             <div class="footer-about">
                                 <img src="assets/img/footer-logo.png" alt="Logo" class="img-fluid">
-                                <p>We are legend Lorem ipsum dolor sitmet, nsecte ipisicing eit, sed do eiusmod tempor incidunt ut  et do maga aliqua enim ad minim.</p>
+                                <p style="font-size:14px;">We are dedicated to simplifying the visa application process through innovative AI-powered predictions and data-driven insights. Our mission is to empower individuals with accurate recommendations while ensuring transparency and security in handling personal data. With a commitment to excellence, we strive to guide users confidently through their visa journey, helping them make informed decisions every step of the way.</p>
                                 <a href="#">Phone: +92 316 12133322</a> <a href="#">Fax: +92 316 12133322</a> <br> <a href="#">Email: info@globalvisa.com</a>
                             </div>
                         </div>
@@ -30,10 +30,10 @@
                                 </form>
                             </div>
                             <div class="footer-social-icons">
-                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-vimeo"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-vimeo"></i></a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="footer-bottom-text">
-                        <p>&#xA9; 2025 Shamsi Tech, All Rights Reserved.</p>
+                        <p>&#xA9; <?php echo date('Y')?> GVOP IT Team, All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

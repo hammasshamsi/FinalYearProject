@@ -78,9 +78,9 @@
                                             <div style="font-size: 12px; color: #888;">{{ Auth::user()->email }}</div>
                                         </div>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item user-dropdown-item" href="{{ route('profile.edit') }}">
+                                        <!-- <a class="dropdown-item user-dropdown-item" href="{{ route('profile.edit') }}">
                                             <i class="fa fa-user"></i> Profile
-                                        </a>
+                                        </a> -->
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
                                             <button class="dropdown-item user-dropdown-item" type="submit">

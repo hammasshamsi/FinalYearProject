@@ -19,6 +19,40 @@
                         </p>
                     </div>
 
+                    
+                    <!-- Chart Section
+                    <div class="card shadow-lg p-4 mb-4 text-center" style="border-radius: 1rem; background: #f4f9ff;">
+                        <h5 class="mb-4">Approval Probability Chart</h5>
+                        <canvas id="approvalChart" style="max-width: 400px; max-height: 200px; margin: 0 auto;"></canvas>
+                    </div> -->
+
+                    <!-- Charts Row -->
+                    <div class="row justify-content-center mb-5">
+                        <!-- Chart 1 -->
+                        <div class="col-md-4">
+                            <div class="card shadow-lg p-4 text-center" style="border-radius: 1rem; background: #f4f9ff; height:400px">
+                                <h5 class="mb-4">Approval Probability</h5>
+                                <canvas id="approvalChart" style="max-width: 100%; height: 200px;"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Chart 2 -->
+                        <div class="col-md-4">
+                            <div class="card shadow-lg p-4 text-center" style="border-radius: 1rem; background: #f4f9ff; height:400px">
+                                <h5 class="mb-4">Visa Type Distribution</h5>
+                                <canvas id="visaTypeChart" style="max-width: 100%; height: 200px;"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Chart 3 -->
+                        <div class="col-md-4">
+                            <div class="card shadow-lg p-4 text-center" style="border-radius: 1rem; background: #f4f9ff;height:400px">
+                                <h5 class="mb-4">Country Preferences</h5>
+                                <canvas id="countryChart" style="max-width: 100%; height: 200px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
                             <h1>
                                 <span class="text-dark" style="font-size: 2.5rem; font-weight: 600; color:black">Consultancy Services</span>
                             </h1>
@@ -238,7 +272,76 @@
 @endpush
 
 @push('scripts')
-<!-- Bootstrap 4 JS and jQuery 3.3.1 -->
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Approval Probability Chart
+    const approvalCtx = document.getElementById('approvalChart').getContext('2d');
+    const approvalProbability = {{ $approvalProbability * 100 }}; // Convert to percentage
+
+    new Chart(approvalCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Approval Probability', 'Remaining'],
+            datasets: [{
+                data: [approvalProbability, 100 - approvalProbability],
+                backgroundColor: ['#28a745', '#dc3545'],
+                hoverBackgroundColor: ['#218838', '#c82333']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { position: 'top' }
+            }
+        }
+    });
+
+    // Visa Type Distribution Chart
+    const visaTypeCtx = document.getElementById('visaTypeChart').getContext('2d');
+    new Chart(visaTypeCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Student', 'Work', 'Tourist', 'Business'],
+            datasets: [{
+                label: 'Visa Types',
+                data: [40, 25, 20, 15], // Example data
+                backgroundColor: ['#007bff', '#ffc107', '#28a745', '#dc3545']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: { beginAtZero: true, max:50 }
+            }
+        }
+    });
+
+    // Country Preferences Chart
+    const countryCtx = document.getElementById('countryChart').getContext('2d');
+    new Chart(countryCtx, {
+        type: 'pie',
+        data: {
+            labels: ['Canada', 'USA', 'UK', 'Australia'],
+            datasets: [{
+                data: [20, 35, 15, 30], // Example data
+                backgroundColor: ['#007bff', '#ffc107', '#28a745', '#dc3545'],
+                hoverBackgroundColor: ['#0056b3', '#e0a800', '#218838', '#c82333']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { position: 'top' }
+            }
+        }
+    });
+});
+</script>
 @endpush

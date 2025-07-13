@@ -79,26 +79,38 @@ class FormController extends Controller
 
         $consultancies = [
             [
-                'name' => 'VisaPro Experts',
-                'link' => 'https://example.com/consultancy1',
+                'name' => 'Ocean 1 Pvt Ltd',
+                'link' => 'https://www.ocean.net.pk/',
                 'img' => asset('assets/img/gallery/g2.jpg'),
             ],
             [
-                'name' => 'Global Study Hub',
-                'link' => 'https://example.com/consultancy2',
+                'name' => 'Dunya Consultants',
+                'link' => 'https://dunyaconsultants.com/',
                 'img' => asset('assets/img/gallery/g3.jpg')
             ],
             [
-                'name' => 'EduWorld Consultants',
-                'link' => 'https://example.com/consultancy3',
+                'name' => 'Paragon Education',
+                'link' => 'https://paragoneducation.pk/',
                 'img' => asset('assets/img/gallery/g4.jpg')
             ],
             [
-                'name' => 'ImmigrateNow',
-                'link' => 'https://example.com/consultancy4',
-                'img' => asset('assets/img/gallery/g6.jpg')
+                'name' => 'Euro Educational Consultants',
+                'link' => 'https://euroconst.com/',
+                'img' => asset('assets/img/gallery/g2.jpg')
+            ],
+            [
+                'name' => 'HS Global Consultants',
+                'link' => 'https://hsglobalconsultants.com/',
+                'img' => asset('assets/img/gallery/g3.jpg')
+            ],
+            [
+                'name' => 'IDP Pakistan',
+                'link' => 'https://www.idp.com/pakistan/',
+                'img' => asset('assets/img/gallery/g4.jpg')
             ]
         ];
+
+        $randomConsultancies = collect($consultancies)->shuffle()->take(4)->toArray();
 
         $isApproved = str_contains(strtolower($prediction), 'approve');
 
@@ -106,7 +118,7 @@ class FormController extends Controller
             'prediction' => $prediction,
             'approvalProbability' => $approvalProbability,
             'isApproved' => $isApproved,
-            'consultancies' => $consultancies
+            'consultancies' => $randomConsultancies
         ]);
     }
 
