@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\UniversityController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,9 @@ Route::get('/event', function () {
     return view('event');
 });
 
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -40,17 +44,29 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    
+    Route::get('/get-start', function () {
+        return view('getstarted');
+    });
 
     Route::get('/form', function(){
         return view('form');
     });
 
+    Route::get('/uni-recommend-form', function(){
+        return view('uniform');
+    });
+
     Route::post('/api/submit-form', [FormController::class, 'submit'])->name('api.submit.form');
     
-    Route::post('/form/submit', [FormController::class, 'submit'])->name('form.submit');
+    Route::post('/api/submit', [FormController::class, 'submit'])->name('form.submit');
     Route::get('/result', [FormController::class, 'result'])->name('result');
+
+    Route::post('/university-submit', [UniversityController::class, 'submit'])->name('api.university.submit');
+    Route::get('/university-result', [UniversityController::class, 'result'])->name('university.result');
+
+    
+
 });
-// Route::get('/result', function () {
-//     return view('result');
-// });
+
 require __DIR__.'/auth.php';

@@ -33,7 +33,7 @@
                             <a></a>
                         @else
                             <a class="btn-auth btn-auth-rev" href="{{ route('login') }}">Login</a>
-                            <a class="btn-auth btn-auth" href="{{ route('register') }}">Register</a>
+                            <a class="btn-auth btn-auth" href="{{ route('login') }}">Register</a>
                         @endauth
 
                         <!-- <a title="Login" class="btn-auth btn-auth-rev" href="/register">Login</a>
@@ -64,7 +64,7 @@
                                 <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
                                 
                                 <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link special-link" href="/form"><i class="fa fa-send"></i><span style="width:3px"> </span>Get Started</a></li>   
+                                <li class="nav-item"><a class="nav-link special-link" href="/get-start"><i class="fa fa-send"></i><span style="width:3px"> </span>Get Started</a></li>   
                                 
                                 @auth
                                 <li class="nav-item dropdown">

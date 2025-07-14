@@ -151,7 +151,7 @@
                             <label for="ielts_score" class="block mb-2 text-sm font-medium text-gray-900">IELTS Score<span style="color:red"> *</span></label>
                             <!-- <input type="text" id="ielts_score" name="ielts_score" class="form-control" placeholder="eg; 6.5" required> -->
                             <select id="ielts_score" name="ielts_score" class="form-control" required>
-                                <option value="">Select Highest Education</option>
+                                <option value="">Select IELTS Score</option>
                                 <option value="5.5">5.5</option>
                                 <option value="6.0">6.0</option>
                                 <option value="6.5">6.5</option>
