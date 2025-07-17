@@ -22,7 +22,7 @@
                     <div class="single-widget-wrap">
                         <h4 class="widget-title">Get In Touch</h4>
                         <div class="widgei-body">
-                            <p>We are legend Lorem ipsum dolor sitmet, nsecte ipisicing eit, sed</p>
+                            <p>Want to learn more? Contact us and let’s connect!</p>
                             <div class="newsletter-form">
                                 <form id="cbx-subscribe-form" role="search">
                                     <input type="email" placeholder="Enter Your Email" id="subscribe" required>

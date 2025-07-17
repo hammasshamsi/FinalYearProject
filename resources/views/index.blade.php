@@ -13,7 +13,7 @@
                             <div class="slider-content">
                                 <h2>We Are Proud</h2>
                                 <h3>Students of <span>DHA SUFFA UNIVERSITY</span></h3>
-                                <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the need (academic, relocation, career, projects, mentorship, etc. you can ask the community and get responses in three.</p>
+                                <p>Guiding futures through intelligent decision-making,Crafted with <b>Data, Purpose, and Passion.</b></p>
                                 <div class="slider-btn">
                                     <a href="#about-area" class="btn btn-brand smooth-scroll">our mission</a>
                                     <a href="about.html" class="btn btn-brand-rev">our story</a>
@@ -95,7 +95,7 @@
                                     <div class="col-lg-5">
                                         <div class="up-event-thumb">
                                             <img src="{{ asset('assets/img/upcoming-events/event-1.jpg') }}" class="img-fluid" alt="Upcoming Event">
-                                            <h4 class="up-event-date">It&#x2019;s 1 March 2025</h4>
+                                            <h4 class="up-event-date">It&#x2019;s 22 July 2025</h4>
                                         </div>
                                     </div>
 
@@ -104,12 +104,12 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2025/3/1"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/7/22 09:00"></div>
                                                         <p>Remaining</p>
                                                     </div>
-                                                    <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
-                                                    <p>Hello everybody. We are going to arrange an event at <span class='location'>DHA Suffa University</span> for students who are interested to study aboard or in immigration to abroad. </p>
-                                                    <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
+                                                    <h3><a href="single-event.html">FYP Open House – Project Demonstration</a></h3>
+                                                    <p>Hello everyone! We are excited to announce that our Final Year Project will be evaluated at <span class='location'>DHA Suffa University</span>. This event marks the culmination of our academic journey, where we will be showcasing our project to faculty, evaluators, and fellows. We look forward to sharing our work and the efforts behind it.</p>
+                                                    <!-- <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +139,7 @@
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
-                                                    <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
+                                                    <!-- <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +169,7 @@
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
-                                                    <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
+                                                    <!-- <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -200,9 +200,20 @@
                                 <img src="" alt="" class="img-fluid">
                             </div>
 
-                            <p>There are many company Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis  csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            <p>There are many company Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            <a href="about.html" class="btn btn-brand about-btn">know more</a>
+                            <p>
+                                Our mission is to provide a user-friendly platform that helps individuals make informed decisions about studying abroad.
+                                We offer two key features: personalized university selection and visa approval chance prediction for specific countries.
+                            </p>
+                            <p>
+                                Using separate data-driven models, we deliver accurate recommendations tailored to each user’s preferences and profile.
+                            </p>
+                            <p>
+                                Our <b>Mission</b> is to reduce uncertainty and increase confidence in the study abroad process.
+                                By combining advanced analytics and machine learning, we ensure reliable and up-to-date insights.
+                                We strive to make international education accessible and achievable for everyone.
+                                Ultimately, we empower students to plan their global education journey with clarity and ease.
+                            </p>
+                            <a href="/about" class="btn btn-brand about-btn">know more</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +229,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h2>Our Responsibility</h2>
+                        <h2>Our Features</h2>
                     </div>
                 </div>
             </div>
@@ -230,8 +241,8 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/01.png" alt="Responsibility">
-                        <h4>Scholarship</h4>
-                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
+                        <h4>Personalized University Selection</h4>
+                        <p>We help students find the <b>best universities</b> abroad tailored to their preferences and academic profile.</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -240,8 +251,8 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/02.png" alt="Responsibility">
-                        <h4>Help Current Students</h4>
-                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
+                        <h4>Visa Approval Prediction</h4>
+                        <p>Our predictive model estimates your visa approval chances to <b>help</b> you plan your study abroad journey confidently.</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -250,8 +261,8 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/03.png" alt="Responsibility">
-                        <h4>Help University</h4>
-                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
+                        <h4>Data-Driven Insights</h4>
+                        <p>Leverage intelligent analytics to make <b>informed and accurate decisions</b> about international education</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -260,8 +271,8 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-responsibility">
                         <img src="assets/img/responsibility/04.png" alt="Responsibility">
-                        <h4>Build Community</h4>
-                        <p>Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim</p>
+                        <h4>User-Friendly Platform</h4>
+                        <p><b>Access a simple, Free ,easy-to-navigate interface</b> designed for students to explore all resources seamlessly.</p>
                     </div>
                 </div>
                 <!--== Single Responsibility End ==-->
@@ -387,7 +398,7 @@
                             <!-- Single Gallery Start -->
                             <div class="col-lg-3  col-sm-6 old event pic">
                                 <div class="single-gallery-item video gallery-bg-2">
-                                    <a href="https://player.vimeo.com/video/140182080?title=0&amp;portrait=0&amp;byline=0&amp;autoplay=1&amp;loop=1" class="btn btn-video-play video-popup"><i class="fa fa-play"></i></a>
+                                    <a href="https://youtu.be/2ky2KORjxc0?si=jOjvMgxAEp180QZ6" class="btn btn-video-play video-popup"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                             <!-- Single Gallery End -->
