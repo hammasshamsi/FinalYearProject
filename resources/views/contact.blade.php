@@ -9,8 +9,7 @@
             <div class="col-lg-8 m-auto text-center">
                 <div class="page-title-content">
                     <h1 class="h2">Contact Us</h1>
-                    <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the
-                        need</p>
+                    <p>Have questions? We’re just a message away.</p>
                     <a href="#page-content-wrap" class="btn btn-brand smooth-scroll">Let&apos;s See</a>
                 </div>
             </div>
@@ -43,7 +42,9 @@
                             <div class="col-lg-6 m-auto">
                                 <div class="contact-form-wrap">
                                     <h3>send message</h3>
-                                    <form action="#" id="cbx-contact-form">
+                                    
+                                    <form action="{{ route('contact.store') }}" method="POST">
+                                        @csrf
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
@@ -61,7 +62,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="cbxsubject">Subjet</label>
+                                            <label for="cbxsubject">Subject</label>
                                             <input type="text" name="cbxsubject" id="cbxsubject" class="form-control">
                                         </div>
 
@@ -69,13 +70,21 @@
                                             <label for="cbxmessage">Message</label>
                                             <textarea name="cbxmessage" id="cbxmessage" rows="10" cols="80" class="form-control"></textarea>
                                         </div>
-                                        <div class="custom-control custom-checkbox">
+                                        <!-- <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="cbxsendme" name="cbxsendme" value="on">
                                             <label class="custom-control-label" for="cbxsendme">Send Me CC</label>
-                                        </div>
+                                        </div> -->
 
-                                        <button class="btn btn-reg">Send</button>
-                                        <div id="cbx-formalert"></div>
+                                        <button type="submit" class="btn btn-reg">Send</button>
+                                        @if(session('success'))
+                                            <div class="alert alert-success mt-4" style="border-left: 5px solid #00897b ; padding: 15px; background-color: #e1ffe6ff;">
+                                                <h4 class="text-success" style="font-weight: bold;">Form Submitted!!</h4>
+                                                <p style="margin: 0; font-size: 14px;">
+                                                    {{ session('success') }}
+                                                </p>
+                                            </div> 
+                                         @endif     
+
                                     </form>
                                 </div>
                             </div>

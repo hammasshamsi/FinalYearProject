@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\UniversityController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,7 +34,7 @@ Route::get('/event', function () {
     return view('event');
 });
 
-
+Route::post('/contact-form', [ContactController::class, 'store'])->name('contact.store');
 
 
 Route::get('/dashboard', function () {

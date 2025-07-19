@@ -9,8 +9,7 @@
                 <div class="col-lg-8 m-auto text-center">
                     <div class="page-title-content">
                         <h1 class="h2">About Us</h1>
-                        <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the
-                            need</p>
+                        <p>Get to know the people and passion behind our brand.</p>
                         <a href="#page-content-wrap" class="btn btn-brand smooth-scroll">Let&apos;s See</a>
                     </div>
                 </div>
@@ -30,7 +29,7 @@
                             <span class="year shade">About Us</span>
                             <h2 class="h3">Global Visa Prediction System and Insights</h2>
                             <p>At <b>GVOP,</b> we simplify the visa application process by providing AI-powered insights and predictions. 
-                                Our platform analyzes your personal, educational, and travel preferences to estimate your visa approval chances and recommend suitable countries if needed.
+                                Our platform analyzes your personal, educational, and travel preferences to estimate your visa approval chances OR recommend Top 5 universities.
                             </p>
                             <p>We understand how complex and uncertain visa applications can be, 
                                 and our goal is to empower you with data-driven insights to make informed decisions. 
@@ -197,10 +196,8 @@
                                     <img src="{{ asset('assets/img/team-member/image.png') }}" alt="Alumni" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
-                                <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
-                                    inciidunt ut
-                                    labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>XYZ <span class="people-deg">Founder at Something</span></h4>
+                                <p><b>GVOP</b> made it so easy to understand my chances of getting a visa. I felt way more confident applying this time!</p>
+                                <h4>Areeb<span class="people-deg">Lahore, Pakistan</span></h4>
                             </div>
                             <!-- Single People Testimonial -->
 
@@ -210,10 +207,8 @@
                                     <img src="{{ asset('assets/img/team-member/image.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
-                                <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
-                                    inciidunt ut
-                                    labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>Lorem Ipsum <span class="people-deg">Founder at Anything</span></h4>
+                                <p>I had no idea which universities would fit me best. The recommendations saved me hours of research.</p>
+                                <h4>Lorem Ipsum <span class="people-deg">Minister Of Education</span></h4>
                             </div>
                             <!-- Single People Testimonial -->
 
@@ -223,10 +218,8 @@
                                     <img src="{{ asset('assets/img/team-member/image.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
-                                <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
-                                    inciidunt ut
-                                    labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>Lorem Ipsum <span class="people-deg">Minister at Education</span></h4>
+                                <p>It’s like having an education consultant in your pocket. Accurate, fast, and super helpful! </p>
+                                <h4>Hammad<span class="people-deg">Rawalpindi, Pakistan</span></h4>
                             </div>
                             <!-- Single People Testimonial -->
 
@@ -236,10 +229,8 @@
                                     <img src="{{ asset('assets/img/team-member/image.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <i class="quote-icon"></i>
-                                <p>Exxcellent Lorem ipsum dolor sit amet, ectetur adipisicing elit, sed do eimod tempor
-                                    inciidunt ut
-                                    labore et dolorgna aliqua. Ut enim ad minim ostrud. </p>
-                                <h4>Someone<span class="people-deg">Chancellor of University </span></h4>
+                                <p>I love how <b>GVOP</b> uses real data instead of just assumptions. This gave me a clear roadmap for studying abroad.</p>
+                                <h4>Fatima<span class="people-deg">Karachi, Pakistan </span></h4>
                             </div>
                             <!-- Single People Testimonial -->
                         </div>

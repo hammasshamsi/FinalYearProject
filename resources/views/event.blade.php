@@ -9,8 +9,7 @@
                 <div class="col-lg-8 m-auto text-center">
                     <div class="page-title-content">
                         <h1 class="h2">All Event Archive</h1>
-                        <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the
-                            need</p>
+                        <p>Don’t miss a moment—discover everything that’s happening!</p>
                         <a href="#page-content-wrap" class="btn btn-brand smooth-scroll">Let&apos;s See</a>
                     </div>
                 </div>
@@ -75,12 +74,12 @@
                                             <div class="display-table-cell">
                                                 <div class="up-event-text">
                                                     <div class="event-countdown">
-                                                        <div class="event-countdown-counter" data-date="2025/3/01"></div>
+                                                        <div class="event-countdown-counter" data-date="2025/7/22 09:00"></div>
                                                         <p>Remaining</p>
                                                     </div>
-                                                    <h3><a href="single-event.html">We are going to arrange a get together!</a></h3>
-                                                    <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
-                                                    <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
+                                                    <h3><a href="single-event.html">FYP Open House – Project Demonstration</a></h3>
+                                                    <p>Hello everyone! We are excited to announce that our Final Year Project will be evaluated at <span class='location'>DHA Suffa University</span>. This event marks the culmination of our academic journey, where we will be showcasing our project to faculty, evaluators, and fellows. We look forward to sharing our work and the efforts behind it.</p>
+                                                    <!--  <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a> --> 
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +108,7 @@
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a Team Dinner!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
-                                                    <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
+                                                    <!-- <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -138,7 +137,7 @@
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a Mountain Camping!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
-                                                    <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
+                                                    <!-- <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -167,7 +166,7 @@
                                                     </div>
                                                     <h3><a href="single-event.html">We are going to arrange a Meetup with our CEO!</a></h3>
                                                     <p>Hello everybody Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipv ex ea.</p>
-                                                    <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a>
+                                                    <!-- <a href="single-event.html" class="btn btn-brand btn-brand-dark">join with us</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -180,7 +179,7 @@
                 </div>
 
                 <!-- Pagination Start -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-12">
                         <div class="pagination-wrap text-center">
                             <nav>
@@ -197,7 +196,7 @@
                             </nav>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Pagination End -->
             </div>
         </div>

@@ -9,7 +9,7 @@
                 <div class="col-lg-8 m-auto text-center">
                     <div class="page-title-content">
                         <h1 class="h2">Gallery</h1>
-                        <p>Alumni Needs enables you to harness the power of your alumni network. Whatever may be the need</p>
+                        <p>Moments that capture learning, growth, and global dreams.</p>
                         <a href="#page-content-wrap" class="btn btn-brand smooth-scroll">Let&apos;s See</a>
                     </div>
                 </div>
@@ -416,7 +416,7 @@
                             </div>
                             <!-- Single Album End -->
                         </div>
-                        <div class="pagination-wrap text-center">
+                        <!-- <div class="pagination-wrap text-center">
                             <nav>
                                 <ul class="pagination">
                                     <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
@@ -428,7 +428,7 @@
                                     <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
                                 </ul>
                             </nav>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
