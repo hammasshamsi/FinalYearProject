@@ -208,7 +208,7 @@
                                 </div>
                                 <i class="quote-icon"></i>
                                 <p>I had no idea which universities would fit me best. The recommendations saved me hours of research.</p>
-                                <h4>Lorem Ipsum <span class="people-deg">Minister Of Education</span></h4>
+                                <h4>Hassaan Farooqui <span class="people-deg">Karachi, Pakistan</span></h4>
                             </div>
                             <!-- Single People Testimonial -->
 

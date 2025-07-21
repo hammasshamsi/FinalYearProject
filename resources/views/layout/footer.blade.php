@@ -10,7 +10,7 @@
                             <div class="footer-about">
                                 <img src="assets/img/footer-logo.png" alt="Logo" class="img-fluid">
                                 <p style="font-size:14px;">We are dedicated to simplifying the visa application process through innovative AI-powered predictions and data-driven insights. Our mission is to empower individuals with accurate recommendations while ensuring transparency and security in handling personal data. With a commitment to excellence, we strive to guide users confidently through their visa journey, helping them make informed decisions every step of the way.</p>
-                                <a href="#">Phone: +92 316 12133322</a> <a href="#">Fax: +92 316 12133322</a> <br> <a href="#">Email: info@globalvisa.com</a>
+                                <a href="#">Phone: +92 316 8275597</a> <br> <a href="#">Email: info@globalvisa.com</a>
                             </div>
                         </div>
                     </div>

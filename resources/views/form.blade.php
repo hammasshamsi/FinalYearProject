@@ -260,10 +260,10 @@
                     <!-- Step 4 -->
                     <div class="step-content agree-checkboxes">
                         <h3 class="mb-4 text-lg font-medium text-gray-900">Agree and Submit Information<span style="color:red"> *</span></h3>
-                        <p><input type="checkbox" id="terms" name="terms"><span></span> I have read and agree to the <a href="#">Terms and Condition</a></p>
-                        <p><input type="checkbox"  id="privacy" name="privacy"><span></span> I agree to the collection, storage, and processing of my personal data as described in the <a href="#">Privacy Policy</a></p>
-                        <p><input type="checkbox" id="third_party" name="third_party"><span></span> I consent to my data being shared with trusted third-party partners if needed</p>
-                        <p><input type="checkbox" id="visa_analysis" name="visa_analysis"><span></span> I consent to my data being used for visa prediction analysis and recommendations.</p>
+                        <p><input type="checkbox" id="terms" name="terms" required><span></span> I have read and agree to the <a href="#">Terms and Condition</a></p>
+                        <p><input type="checkbox"  id="privacy" name="privacy" required><span></span> I agree to the collection, storage, and processing of my personal data as described in the <a href="#">Privacy Policy</a></p>
+                        <p><input type="checkbox" id="third_party" name="third_party" required><span></span> I consent to my data being shared with trusted third-party partners if needed</p>
+                        <p><input type="checkbox" id="visa_analysis" name="visa_analysis" required><span></span> I consent to my data being used for visa prediction analysis and recommendations.</p>
 
                         <!-- Disclaimer Section -->
                         <div class="alert alert-warning mt-4" style="border-left: 5px solid #ffc107 ; padding: 15px; background-color: #fff8e1;">

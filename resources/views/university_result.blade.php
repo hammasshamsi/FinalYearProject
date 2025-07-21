@@ -33,7 +33,7 @@
                                          class="card-img-top rounded-top" style="height: 200px; margin-top:10px; object-fit: cover;">
 
                                     <div class="card-body">
-                                        <h3 class="mt-4 mb-2">{{ $uni['University'] ?? 'University' }}</h3>
+                                        <h3 class="mt-4 mb-2" style="font-style:italic; border-bottom:2px solid #007bff">{{ $uni['University'] ?? 'University' }}</h3>
                                         @if($uni['Similarity'] >= 0.50)
                                             <span class="badge badge-pill badge-primary service-badge">High Similarity</span>
                                         @endif

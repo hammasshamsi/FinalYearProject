@@ -141,8 +141,8 @@
 
                                                         <div class="form-group">
                                                             <div class="custom-control custom-checkbox float-lg-right">
-                                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                                <label class="custom-control-label" for="customCheck1"> I have read and agree to the <a href="#">GVOP</a> Terms of Service</label>
+                                                                <!-- <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                <label class="custom-control-label" for="customCheck1"> I have read and agree to the <a href="#">GVOP</a> Terms of Service</label> -->
                                                             </div>
                                                             <input type="submit" class="btn btn-reg" value="Register">
                                                         </div>

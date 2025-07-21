@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-7 col-7">
                     <div class="preheader-left">
-                        <a href="mailto:info@construc.com"><strong>Email:</strong> info@globalvisa.com</a>
-                        <a href="mailto:info@construc.com"><strong>Hotline:</strong> +92 316 12133322</a>
+                        <a href="mailto:info@globalvisa.com"><strong>Email:</strong> info@globalvisa.com</a>
+                        <a href="tel:+923168275597"><strong>Hotline:</strong> +92 316 8275597</a>
                     </div>
                 </div>
 
