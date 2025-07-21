@@ -5,6 +5,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
+
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="https://calculator-app-erwert34.netlify.app/" class="btn btn-primary" style="border-radius: 0.2rem; font-size: 1.8rem; border:2px solid black">
+                            Currency Converter
+                        </a>
+                    </div>
                     
                     <!-- Prediction Card -->
                     <div class="card shadow-lg p-4 mb-4 text-center" style="border-radius: 1rem; background: #f4f9ff;">
